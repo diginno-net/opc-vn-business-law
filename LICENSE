@@ -1,0 +1,58 @@
+# Giấy phép / License
+
+Bản quyền © 2026 Diginno.
+
+## 1. Nội dung (văn bản, hình ảnh, dữ liệu)
+
+Toàn bộ nội dung trong skill này — trừ các đoạn trích văn bản pháp luật của Nhà nước (thuộc phạm vi công cộng) và các script — được cấp phép theo:
+
+**Creative Commons Attribution 4.0 International (CC BY 4.0)**
+
+Bạn được tự do:
+
+- **Chia sẻ** — sao chép, phân phối bản gốc hoặc bản sửa đổi dưới bất kỳ hình thức nào.
+- **Thích ứng** — phối lại, sửa đổi, tạo tác phẩm phái sinh, kể cả vì mục đích thương mại.
+
+Với điều kiện:
+
+- **Ghi công** — nêu tên tác giả "Diginno — opc-vn-business-law", dẫn nguồn và giữ lại phần miễn trừ trách nhiệm.
+- **Không thêm hạn chế** — không áp dụng điều khoản pháp lý hay biện pháp kỹ thuật hạn chế người khác làm những điều giấy phép cho phép.
+- **Không bảo đảm** — nội dung được cung cấp "nguyên trạng", không kèm bất kỳ bảo đảm nào.
+
+Toàn văn giấy phép: https://creativecommons.org/licenses/by/4.0/legalcode
+
+## 2. Script (mã nguồn)
+
+Các tệp trong `scripts/` được cấp phép theo **MIT License**:
+
+```text
+MIT License
+
+Copyright (c) 2026 Diginno
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+## 3. Văn bản pháp luật được trích dẫn
+
+Các đoạn trích điều luật, nghị định, thông tư là văn bản quy phạm pháp luật của Nhà nước Việt Nam, không thuộc phạm vi bảo hộ quyền tác giả theo quy định. Khi trích dẫn, nên ghi rõ số hiệu và cơ quan ban hành.
+
+## 4. Ghi công đề xuất
+
+> Dựa trên skill `opc-vn-business-law` của Diginno (CC BY 4.0). Nội dung chỉ mang tính tham khảo, không phải tư vấn pháp lý.

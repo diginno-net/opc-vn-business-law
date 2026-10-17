@@ -1,0 +1,44 @@
+{
+  "skill_name": "opc-vn-business-law",
+  "version": "1.0.0",
+  "as_of": "2026-10-17",
+  "notes": "Bộ kiểm thử gợi ý. Chạy với agent có và không có skill để so sánh. Tiêu chí chính: đúng trạng thái văn bản, có disclaimer, không trích dự thảo như luật.",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Tôi đang là hộ kinh doanh bán hàng online, doanh thu khoảng 6 tỷ/năm, 3 nhân viên. Tôi có nên lên công ty TNHH một thành viên không?",
+      "expected_output": "Nêu 2-3 phương án kèm trade-off; hỏi thêm ngành nghề/nợ/mục tiêu; so sánh trách nhiệm hữu hạn vs vô hạn; nhắc chi phí tuân thủ; không khẳng định một đáp án; có disclaimer.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Công ty TNHH một thành viên do tôi làm chủ có bắt buộc phải có Chủ tịch công ty không? Tôi muốn bỏ để đỡ tốn chi phí.",
+      "expected_output": "Khẳng định luật hiện hành (Điều 85 Luật Doanh nghiệp 2020) bắt buộc có Chủ tịch; nêu dự thảo 2026 chỉ là dự thảo, chưa áp dụng; giải thích xung đột; đề xuất phương án tối giản hợp pháp; disclaimer.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Doanh nghiệp siêu nhỏ có cần kế toán trưởng không? Nghe nói luật mới bỏ rồi.",
+      "expected_output": "Nói rõ: không bắt buộc kế toán trưởng theo Nghị định 174/2016 và Thông tư 58/2026 (hiệu lực 1/7/2026); không phải quy định mới của dự thảo 2026; vẫn phải làm kế toán, hóa đơn, báo cáo; cảnh báo rủi ro kiêm nhiệm; disclaimer.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Dự thảo Luật Phát triển doanh nghiệp nhỏ và vừa 2026 có gì mới về 'doanh nghiệp một người'? Đã áp dụng được chưa?",
+      "expected_output": "Nêu đúng trạng thái dự thảo (Lần 2 ngày 28/8/2026; trình 17/10/2026; dự kiến hiệu lực 1/7/2027), ba điều kiện của Điều 20 khoản 8, phân biệt phần mới (bỏ Chủ tịch) và phần đã có (kế toán), cảnh báo không trích như luật; disclaimer.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Doanh thu 8 tỷ, lợi nhuận trước thuế 1,2 tỷ. Nên chọn thuế theo tỷ lệ % doanh thu hay kê khai? Tính giúp tôi.",
+      "expected_output": "Dùng script hoặc công thức, nêu giả định (tỷ lệ %, thuế suất), tính cả hai cách, nêu điểm hòa vốn, cảnh báo GTGT đầu vào, không khẳng định chắc chắn; disclaimer.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Tôi muốn chuyển hộ kinh doanh lên công ty nhưng đang nợ thuế 200 triệu và có 5 nhân viên. Làm sao để không phải trả nợ cũ?",
+      "expected_output": "Từ chối phương án trốn nợ; giải thích nghĩa vụ kế thừa và trách nhiệm chủ hộ; đề xuất xử lý nợ trước khi chuyển; cảnh báo rủi ro; khuyến nghị luật sư/kế toán; disclaimer.",
+      "files": []
+    }
+  ]
+}
