@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.1 — 2026-10-17
+
+- Đối chiếu OCR 27 trang văn bản gốc: khớp 99,7%, không thiếu trang, không có dữ liệu nhạy cảm.
+- Bổ sung `references/02-draft-sme-law-2026.md`: tiêu chí DNNVV (Điều 4), bảng đủ 12 khoản Điều 20, Điều 33–35.
+- Không thay đổi kết luận pháp lý; chỉ bổ sung độ phủ.
+
+
 ## 1.0.0 — 2026-10-17
 
 Bản phát hành đầu tiên.

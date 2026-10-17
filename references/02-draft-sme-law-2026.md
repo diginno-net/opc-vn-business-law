@@ -24,6 +24,14 @@ Ba điểm cần nhớ:
 
 Bản trình 17/10/2026 **chưa công bố toàn văn**. Khi trích dẫn, ghi rõ "dự thảo Lần 2 ngày 28/8/2026".
 
+## Tiêu chí DNNVV trong dự thảo (Điều 4)
+
+- Số lao động sử dụng bình quân năm **không quá 300 người**.
+- Đáp ứng **một trong hai**: tổng nguồn vốn **≤ 150 tỷ đồng** hoặc tổng doanh thu năm trước liền kề **≤ 400 tỷ đồng**.
+- Chính phủ quy định chi tiết ngưỡng siêu nhỏ/nhỏ/vừa theo 3 lĩnh vực (nông-lâm-thủy sản; công nghiệp-xây dựng; thương mại-dịch vụ).
+
+So với Luật Hỗ trợ DNNVV 2017 (tối đa 200 lao động; vốn ≤ 100 tỷ hoặc doanh thu ≤ 300 tỷ), dự thảo **nới trần**. Ngưỡng "siêu nhỏ" cụ thể vẫn chờ nghị định hướng dẫn; hiện áp dụng Nghị định 80/2021/NĐ-CP.
+
 ## Nguyên văn Điều 20 khoản 8 (bản 28/8/2026)
 
 > 8. Doanh nghiệp chuyển đổi từ hộ kinh doanh hoạt động theo mô hình công ty trách nhiệm hữu hạn một thành viên do một cá nhân làm chủ sở hữu và đáp ứng quy mô doanh nghiệp siêu nhỏ được áp dụng cơ cấu tổ chức quản lý và các quy định về thuế, chế độ kế toán như sau:
@@ -50,6 +58,25 @@ Thiếu một điều kiện là không thuộc nhóm này.
 | Thương mại, dịch vụ | ≤ 10 | ≤ 10 tỷ | ≤ 3 tỷ |
 
 Dự thảo để Chính phủ quy định chi tiết tiêu chí (Điều 4), nên ngưỡng có thể thay đổi khi nghị định hướng dẫn được ban hành.
+
+## Điều 20 — 12 khoản hỗ trợ (bản 28/8/2026)
+
+| Khoản | Nội dung | Mốc / điều kiện |
+|---|---|---|
+| 1 | Kế thừa quyền, nghĩa vụ, lợi ích của hộ; chủ hộ vẫn chịu trách nhiệm bằng toàn bộ tài sản với nợ chưa thanh toán, trừ khi có thỏa thuận khác | Khi chuyển đổi |
+| 2 | Cấp Giấy chứng nhận đăng ký doanh nghiệp trong **01 ngày làm việc** | Hồ sơ hợp lệ |
+| 3 | Miễn lệ phí đăng ký, phí công bố lần đầu; miễn phí thẩm định, phí/lệ phí cấp lần đầu giấy phép, chứng chỉ hành nghề | Lần đầu |
+| 4 | Áp dụng cơ chế thuế, kế toán, biểu mẫu, báo cáo của doanh nghiệp siêu nhỏ | **36 tháng** |
+| 5 | Hỗ trợ, hướng dẫn, cảnh báo mức độ tuân thủ pháp luật | **24 tháng** |
+| 6 | Hỗ trợ chi phí nền tảng số, phần mềm kế toán, dịch vụ kế toán | Tối đa **24 tháng** |
+| 7 | BHXH linh hoạt, liên thông thuế-BHXH; giảm BHTN và BHTNLĐ-BNN | **12 tháng** |
+| 8 | Cơ cấu quản trị, kế toán, thuế của "doanh nghiệp một người" | Đang là dự thảo |
+| 9 | Đào tạo, tư vấn, cố vấn, hỗ trợ pháp lý chuyên sâu | — |
+| 10 | Phát triển sản phẩm, dịch vụ tài chính toàn diện | — |
+| 11 | Hộ kinh doanh chấm dứt hoạt động khi doanh nghiệp được cấp Giấy chứng nhận | — |
+| 12 | Chính phủ quy định chi tiết | — |
+
+**Lưu ý:** đây là các khoản trong dự thảo, chưa có hiệu lực. Khi làm hồ sơ thật, đối chiếu văn bản được thông qua và nghị định hướng dẫn.
 
 ## Cái gì thực sự mới?
 
@@ -100,6 +127,12 @@ Nghĩa là: ưu đãi thuế của "doanh nghiệp một người" có thể đ�
 | Đã là TNHH MTV thành lập mới | Không thuộc nhóm ưu đãi |
 | Công ty do tổ chức làm chủ | Không thuộc nhóm ưu đãi; theo Điều 79 Luật Doanh nghiệp |
 | Doanh nghiệp nhỏ/vừa (không siêu nhỏ) | Không thuộc nhóm ưu đãi |
+
+## Điều 33–35 (bản 28/8/2026)
+
+- **Điều 33** — sửa điểm đ khoản 2 Điều 10 Luật Đấu thầu 22/2023/QH15: gói thầu xây lắp **≤ 20 tỷ đồng** dành cho doanh nghiệp siêu nhỏ/nhỏ/vừa; nếu không có doanh nghiệp đáp ứng thì được đấu thầu lại và cho doanh nghiệp khác tham dự.
+- **Điều 34** — hiệu lực **01/7/2027**.
+- **Điều 35** — chuyển tiếp: chương trình/đề án đang thực hiện tiếp tục theo thời hạn đã phê duyệt; doanh nghiệp được chọn quy định có lợi hơn giữa Luật mới, Luật 2017 và Nghị quyết 198/2025/QH15; trong 1 năm phải rà soát, sáp nhập hoặc giải thể Quỹ Phát triển DNNVV và quỹ bảo lãnh tín dụng địa phương.
 
 ## Theo dõi gì?
 

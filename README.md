@@ -118,4 +118,5 @@ Ghi công đề xuất:
 
 ## Phiên bản
 
+- **1.0.1** — 17/10/2026 — bổ sung Điều 4, đủ 12 khoản Điều 20, Điều 33–35 sau đối chiếu OCR.
 - **1.0.0** — 17/10/2026 — bản đầu tiên.

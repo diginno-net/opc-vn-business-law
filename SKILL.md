@@ -15,7 +15,7 @@ description: >-
 license: CC-BY-4.0
 metadata:
   author: Diginno
-  version: 1.0.0
+  version: 1.0.1
   category: business-ops/functions
   jurisdiction: VN
   as_of: 2026-10-17
