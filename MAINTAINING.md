@@ -45,7 +45,8 @@ git branch -M main
 git remote add origin https://github.com/diginno-net/opc-vn-business-law.git
 git push -u origin main
 
-bash scripts/build_dist.sh
+bash scripts/package_skill.sh   # tao .skill, loai .git/launch/evals
+bash scripts/build_dist.sh      # tao .zip, loai .git/launch
 gh release create v1.0.0 dist/opc-vn-business-law-v1.0.0.zip \
   --title "v1.0.0" \
   --notes "Bản đầu tiên: mô hình doanh nghiệp một người, chuyển đổi hộ kinh doanh, dự thảo Luật Phát triển DNNVV 2026, kế toán siêu nhỏ, thuế."
@@ -55,10 +56,12 @@ Nếu chưa có `gh`, tạo release thủ công và đính kèm file zip trong `
 
 ## 4. Gói phát hành
 
-`scripts/build_dist.sh` tạo:
+Hai script đóng gói:
 
-- `dist/opc-vn-business-law-v<version>.zip`
-- In SHA-256 để dán vào release notes.
+- `scripts/package_skill.sh` → `dist/opc-vn-business-law.skill` (không có `.git`, `launch/`, `evals/`).
+- `scripts/build_dist.sh` → `dist/opc-vn-business-law-v<version>.zip` (không có `.git`, `launch/`; có `evals/`).
+
+Sau khi đóng gói, chạy `bash scripts/audit_public.sh` và chỉ phát hành khi PASS.
 
 Nội dung zip giữ nguyên cấu trúc thư mục, có `SKILL.md` ở gốc.
 
@@ -81,6 +84,7 @@ Nội dung zip giữ nguyên cấu trúc thư mục, có `SKILL.md` ở gốc.
 - Số liệu tài chính nội bộ, giá dịch vụ, chiến lược bán.
 - Tên khách hàng, hợp đồng, hồ sơ thật.
 - Đường dẫn máy cá nhân, token, API key.
+- `launch/` là nháp nội bộ (bài đăng, CTA, kế hoạch); không commit, không đóng gói, không publish khi chưa duyệt.
 
 ## 8. Rollback
 

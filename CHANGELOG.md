@@ -10,6 +10,9 @@ Bản phát hành đầu tiên.
 - Script `so_sanh_thue.py` (thuế % doanh thu vs kê khai) + self-test.
 - Disclaimer tiếng Việt và tiếng Anh; giấy phép CC BY 4.0 (nội dung) + MIT (script).
 - Bộ eval gợi ý cho kiểm thử skill.
+- `PROMO.md`: mời cộng đồng (2 nhóm Facebook + YouTube) và CTA dịch vụ Training AI 1:1.
+- `scripts/audit_public.sh`: quét secret/PII/đường dẫn và kiểm tra bên trong gói.
+- `scripts/package_skill.sh`: đóng gói `.skill` sạch (loại `.git`, `launch/`, `evals/`).
 
 Nguồn chính: Cổng thông tin Quốc hội (duthaoonline.quochoi.vn), Công báo Chính phủ, Luật Doanh nghiệp 2020, Luật Kế toán 2015, Nghị định 174/2016/NĐ-CP, Thông tư 58/2026/TT-BTC, Nghị định 80/2021/NĐ-CP, Luật Thuế TNDN 67/2025/QH15.
 

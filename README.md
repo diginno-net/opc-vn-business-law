@@ -74,6 +74,13 @@ Nói với agent bằng ngôn ngữ tự nhiên:
 
 Agent sẽ đọc `SKILL.md`, mở file chuyên đề tương ứng, và trả lời theo mẫu có disclaimer.
 
+## Cộng đồng & dịch vụ
+
+- **Tự động hóa cho bớt việc** — nhóm Facebook cho chủ doanh nghiệp/vận hành: https://www.facebook.com/groups/tudonghoachobotviec/
+- **OpenCode VN** — nhóm Facebook cho người build agent/skill: https://www.facebook.com/groups/opencode.io.vn/
+- **YouTube**: https://www.youtube.com/@nguyenngothuong
+- **Training AI 1:1 cho doanh nghiệp** — làm trên quy trình thật, bàn giao workflow chạy được. Chi tiết: [PROMO.md](PROMO.md).
+
 ## Phạm vi
 
 **Có:** chọn mô hình, chuyển đổi, quản trị công ty một người, kế toán siêu nhỏ, thuế cơ bản, checklist hồ sơ, dự thảo luật 2026.
