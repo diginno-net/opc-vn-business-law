@@ -17,6 +17,7 @@ STAGE="$(mktemp -d)"
 cleanup() {
   [ -d "$STAGE/.git" ] && mv "$STAGE/.git" "$ROOT/.git"
   [ -d "$STAGE/launch" ] && mv "$STAGE/launch" "$ROOT/launch"
+  [ -f "$STAGE/.audit-internal-terms" ] && mv "$STAGE/.audit-internal-terms" "$ROOT/.audit-internal-terms"
   rm -rf "$STAGE"
 }
 trap cleanup EXIT
@@ -24,6 +25,7 @@ trap cleanup EXIT
 # Tam dua .git va launch ra ngoai de khong bi dong goi
 [ -d .git ] && mv .git "$STAGE/.git"
 [ -d launch ] && mv launch "$STAGE/launch"
+[ -f .audit-internal-terms ] && mv .audit-internal-terms "$STAGE/.audit-internal-terms"
 
 # Xoa dist cu de khong bi dong goi long nhau
 rm -rf dist

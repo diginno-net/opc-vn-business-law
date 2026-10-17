@@ -17,6 +17,7 @@ rm -f "$OUT"
 zip -r "$OUT" . \
   -x "dist/*" \
   -x "launch/*" \
+  -x ".audit-internal-terms" \
   -x ".git/*" \
   -x "*/__pycache__/*" \
   -x "*.pyc" \

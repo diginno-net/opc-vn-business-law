@@ -81,6 +81,8 @@ Agent sẽ đọc `SKILL.md`, mở file chuyên đề tương ứng, và trả l
 - **YouTube**: https://www.youtube.com/@nguyenngothuong
 - **Training AI 1:1 cho doanh nghiệp** — làm trên quy trình thật, bàn giao workflow chạy được. Chi tiết: [PROMO.md](PROMO.md).
 
+Nội dung pháp lý/kinh doanh đăng chủ yếu ở nhóm Tự động hóa; nhóm OpenCode dành cho build agent/skill.
+
 ## Phạm vi
 
 **Có:** chọn mô hình, chuyển đổi, quản trị công ty một người, kế toán siêu nhỏ, thuế cơ bản, checklist hồ sơ, dự thảo luật 2026.

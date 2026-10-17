@@ -85,6 +85,7 @@ Nội dung zip giữ nguyên cấu trúc thư mục, có `SKILL.md` ở gốc.
 - Tên khách hàng, hợp đồng, hồ sơ thật.
 - Đường dẫn máy cá nhân, token, API key.
 - `launch/` là nháp nội bộ (bài đăng, CTA, kế hoạch); không commit, không đóng gói, không publish khi chưa duyệt.
+- `.audit-internal-terms` chứa tên khách/hệ thống nội bộ để audit local; đã gitignore, **không commit**.
 
 ## 8. Rollback
 

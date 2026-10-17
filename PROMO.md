@@ -20,6 +20,8 @@ Nơi mình chia sẻ bản cập nhật, case thật và nhận câu hỏi:
 
 Quy ước chung: hỏi cụ thể, đưa bối cảnh, không spam, không quảng cáo trá hình, không đưa ra lời khuyên pháp lý khi chưa có căn cứ. Bài viết trong nhóm là trao đổi cộng đồng, không thay tư vấn chuyên môn.
 
+**Phạm vi:** nội dung pháp lý/kinh doanh đăng chủ yếu ở nhóm **Tự động hóa cho bớt việc**. Nhóm **OpenCode VN** dành cho nội dung build agent/skill và vibe coding — không đăng bài pháp lý ở đó.
+
 ## 2. Dịch vụ: Training AI 1:1 cho doanh nghiệp
 
 ### Vấn đề thường gặp

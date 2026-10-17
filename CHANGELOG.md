@@ -13,6 +13,7 @@ Bản phát hành đầu tiên.
 - `PROMO.md`: mời cộng đồng (2 nhóm Facebook + YouTube) và CTA dịch vụ Training AI 1:1.
 - `scripts/audit_public.sh`: quét secret/PII/đường dẫn và kiểm tra bên trong gói.
 - `scripts/package_skill.sh`: đóng gói `.skill` sạch (loại `.git`, `launch/`, `evals/`).
+- Phạm vi quảng cáo đợt này: chỉ nhóm Tự động hóa cho bớt việc; nhóm OpenCode để dành cho nội dung build agent/skill.
 
 Nguồn chính: Cổng thông tin Quốc hội (duthaoonline.quochoi.vn), Công báo Chính phủ, Luật Doanh nghiệp 2020, Luật Kế toán 2015, Nghị định 174/2016/NĐ-CP, Thông tư 58/2026/TT-BTC, Nghị định 80/2021/NĐ-CP, Luật Thuế TNDN 67/2025/QH15.
 
