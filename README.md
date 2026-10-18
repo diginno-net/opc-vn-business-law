@@ -50,10 +50,10 @@ Giữ nguyên cấu trúc thư mục (SKILL.md phải nằm ở gốc).
 ### Cách 2 — Clone từ Git
 
 ```bash
-git clone <repo-url> ~/.claude/skills/opc-vn-business-law
+git clone https://github.com/diginno-net/opc-vn-business-law.git ~/.claude/skills/opc-vn-business-law
 ```
 
-> Repo dự kiến: `diginno-net/opc-vn-business-law` (cập nhật khi phát hành).
+> Repo: https://github.com/diginno-net/opc-vn-business-law
 
 ### Kiểm tra
 
@@ -118,5 +118,6 @@ Ghi công đề xuất:
 
 ## Phiên bản
 
+- **1.0.2** — 18/10/2026 — cập nhật link repo public, giữ nguyên nội dung pháp lý.
 - **1.0.1** — 17/10/2026 — bổ sung Điều 4, đủ 12 khoản Điều 20, Điều 33–35 sau đối chiếu OCR.
 - **1.0.0** — 17/10/2026 — bản đầu tiên.

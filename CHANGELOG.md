@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.2 — 2026-10-18
+
+- Cập nhật link repo public (`diginno-net/opc-vn-business-law`) trong README.
+- Không thay đổi nội dung pháp lý.
+
+
 ## 1.0.1 — 2026-10-17
 
 - Đối chiếu OCR 27 trang văn bản gốc: khớp 99,7%, không thiếu trang, không có dữ liệu nhạy cảm.
