@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.1.0 — 2026-10-28 (chưa phát hành)
+
+- **Đính chính:** ví dụ 8 tỷ cũ dùng 20% mặc định; phép tính 17% là 204 triệu và biên hòa vốn 8,82% **trước miễn/giảm**, không xác nhận doanh nghiệp được dùng phương pháp % doanh thu. Sửa chiều kết luận hòa vốn trong tài liệu.
+- CLI mặc định `danh-gia`, tách doanh thu kỳ hiện tại với doanh thu căn cứ năm trước; không kết luận khi thiếu dữ kiện/ngoại lệ. Sàng lọc điều kiện % doanh thu <=3 tỷ, khả năng xác định chi phí/thu nhập và nhánh kiểm miễn <=1 tỷ.
+- **Thay đổi tương thích:** mô phỏng phải ghi `--che-do mo-phong` cùng hai tỷ lệ tường minh. Chỉ nhận phân số thập phân (0.015, 0.17); bỏ cách nhập 1.5 và hai giá trị mặc định. Giữ `--loi-nhuan` làm alias cho `--thu-nhap-tinh-thue` giả định.
+- Chặn đầu vào/kết quả NaN/Infinity; không gắn phương pháp TNDN với quyền khấu trừ GTGT. Không tự tính số thực nộp sau ưu đãi; cảnh báo NQ43/2026 và phần hướng dẫn chưa xác minh.
+- Bổ sung TT99, phạm vi/lựa chọn TT133 và kỳ áp dụng TT58. Sửa thông tin môn bài từ 2026, lương chủ TNHH MTV cá nhân và thu nhập sau hoàn thành nghĩa vụ TNDN.
+- Thêm regression test stdlib, eval CLI tự động và rubric câu trả lời có cơ chế nhận điểm/bằng chứng; không coi test số học là benchmark tư vấn pháp lý.
+- Phạm vi rà soát pháp lý **một phần** ngày 28/10; không tuyên bố cập nhật toàn bộ luật, hiệu lực TT133 hoặc nghị định hướng dẫn NQ43 cuối cùng.
+- Đóng gói theo danh sách nguồn công khai, không di chuyển `.git` hay xóa cả `dist`; ZIP đầy đủ có test/eval, `.skill` chỉ chứa runtime/tài liệu cài agent.
+
 ## 1.0.2 — 2026-10-18
 
 - Cập nhật link repo public (`diginno-net/opc-vn-business-law`) trong README.

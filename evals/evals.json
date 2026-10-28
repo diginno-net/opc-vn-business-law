@@ -1,44 +1,292 @@
 {
   "skill_name": "opc-vn-business-law",
-  "version": "1.0.0",
-  "as_of": "2026-10-17",
-  "notes": "Bộ kiểm thử gợi ý. Chạy với agent có và không có skill để so sánh. Tiêu chí chính: đúng trạng thái văn bản, có disclaimer, không trích dự thảo như luật.",
+  "version": "1.1.0",
+  "as_of": "2026-10-28",
+  "notes": "Two separate paths: deterministic calculator contract checks and externally supplied human/LLM semantic judgments. No grades means no skill benchmark. Rubrics are review criteria, not a regex legal-truth oracle; verify primary sources at grading time.",
   "evals": [
     {
       "id": 1,
       "prompt": "Tôi đang là hộ kinh doanh bán hàng online, doanh thu khoảng 6 tỷ/năm, 3 nhân viên. Tôi có nên lên công ty TNHH một thành viên không?",
       "expected_output": "Nêu 2-3 phương án kèm trade-off; hỏi thêm ngành nghề/nợ/mục tiêu; so sánh trách nhiệm hữu hạn vs vô hạn; nhắc chi phí tuân thủ; không khẳng định một đáp án; có disclaimer.",
-      "files": []
+      "files": [],
+      "assertions": [
+        {
+          "id": "options",
+          "rubric": "Compare HKD, DNTN and/or TNHH MTV with limited versus unlimited liability and compliance trade-offs; do not treat 6bn revenue or three staff as sufficient to select one model."
+        },
+        {
+          "id": "context",
+          "rubric": "Ask about actual activity, prior-period revenue, deductible costs, debts and business goals before a personalized tax/model recommendation."
+        },
+        {
+          "id": "caution",
+          "rubric": "Label advice informational, distinguish current law from draft and recommend qualified advice before conversion."
+        }
+      ]
     },
     {
       "id": 2,
       "prompt": "Công ty TNHH một thành viên do tôi làm chủ có bắt buộc phải có Chủ tịch công ty không? Tôi muốn bỏ để đỡ tốn chi phí.",
       "expected_output": "Khẳng định luật hiện hành (Điều 85 Luật Doanh nghiệp 2020) bắt buộc có Chủ tịch; nêu dự thảo 2026 chỉ là dự thảo, chưa áp dụng; giải thích xung đột; đề xuất phương án tối giản hợp pháp; disclaimer.",
-      "files": []
+      "files": [],
+      "assertions": [
+        {
+          "id": "chair-required",
+          "rubric": "Under current Enterprise Law Article 85, a single-member LLC owned by an individual still has a company chair; the owner may concurrently be director without a separate paid chair position."
+        },
+        {
+          "id": "draft-not-law",
+          "rubric": "Do not use draft SME Article 20(8) to remove the chair today; explicitly distinguish proposal from effective law."
+        },
+        {
+          "id": "practical",
+          "rubric": "Offer lawful role consolidation, retain required governance, and include informational disclaimer."
+        }
+      ]
     },
     {
       "id": 3,
       "prompt": "Doanh nghiệp siêu nhỏ có cần kế toán trưởng không? Nghe nói luật mới bỏ rồi.",
       "expected_output": "Nói rõ: không bắt buộc kế toán trưởng theo Nghị định 174/2016 và Thông tư 58/2026 (hiệu lực 1/7/2026); không phải quy định mới của dự thảo 2026; vẫn phải làm kế toán, hóa đơn, báo cáo; cảnh báo rủi ro kiêm nhiệm; disclaimer.",
-      "files": []
+      "files": [],
+      "assertions": [
+        {
+          "id": "micro-exception",
+          "rubric": "Explain the microenterprise exception permits a person in charge of accounting rather than mandatory chief accountant under Decree 174/2016 Article 20; this predates the SME draft."
+        },
+        {
+          "id": "duties",
+          "rubric": "No chief accountant does not remove books, invoices, tax filings, financial reporting where applicable, qualified personnel and document retention."
+        },
+        {
+          "id": "eligibility",
+          "rubric": "Verify microenterprise classification and applicable accounting regime; do not infer micro status solely from single ownership. Discuss segregation-of-duties risk and disclaimer."
+        }
+      ]
     },
     {
       "id": 4,
       "prompt": "Dự thảo Luật Phát triển doanh nghiệp nhỏ và vừa 2026 có gì mới về 'doanh nghiệp một người'? Đã áp dụng được chưa?",
       "expected_output": "Nêu đúng trạng thái dự thảo (Lần 2 ngày 28/8/2026; trình 17/10/2026; dự kiến hiệu lực 1/7/2027), ba điều kiện của Điều 20 khoản 8, phân biệt phần mới (bỏ Chủ tịch) và phần đã có (kế toán), cảnh báo không trích như luật; disclaimer.",
-      "files": []
+      "files": [],
+      "assertions": [
+        {
+          "id": "draft-status",
+          "rubric": "State SME proposal is a draft, not current law; identify version/date and cite current primary source if claiming later legislative progress. Do not represent a proposed 1 July 2027 start as enacted."
+        },
+        {
+          "id": "conditions",
+          "rubric": "Explain the three simultaneous Article 20(8) conditions: conversion from a household/individual business, a single-member LLC owned by one individual, and microenterprise scale. Do not substitute a director/legal-representative requirement or apply to all one-person businesses automatically."
+        },
+        {
+          "id": "new-versus-existing",
+          "rubric": "Distinguish proposed chair removal from pre-existing accounting chief/personnel exceptions; retain current obligations and disclaimer."
+        }
+      ]
     },
     {
       "id": 5,
       "prompt": "Doanh thu 8 tỷ, lợi nhuận trước thuế 1,2 tỷ. Nên chọn thuế theo tỷ lệ % doanh thu hay kê khai? Tính giúp tôi.",
-      "expected_output": "Dùng script hoặc công thức, nêu giả định (tỷ lệ %, thuế suất), tính cả hai cách, nêu điểm hòa vốn, cảnh báo GTGT đầu vào, không khẳng định chắc chắn; disclaimer.",
-      "files": []
+      "expected_output": "Gate on missing context before advising method choice. Ask prior-period annualized revenue, industry, deductible-cost capability, exceptions and exemption/incentive context; reconcile accounting profit to taxable income. No automatic comparison/recommendation. Only explicitly hypothetical arithmetic may illustrate .015/.17, independently of eligibility and GTGT.",
+      "files": [],
+      "assertions": [
+        {
+          "id": "missing-context-gate",
+          "rubric": "8bn current revenue and 1.2bn accounting profit alone are insufficient. Ask for prior adjacent tax-period properly annualized revenue, industry, ability to determine deductible costs, related-party/excluded cases, exemption/incentive status and taxable-income reconciliation. Do not silently default industry, 1.5% or 20%."
+        },
+        {
+          "id": "eligibility-before-advice",
+          "rubric": "Do not recommend revenue-percentage TNDN as an elective optimization. If 8bn is established as the relevant eligibility revenue, it exceeds 3bn and is ineligible; if only current revenue, distinguish it from prior-period eligibility revenue and do not conclude from it alone."
+        },
+        {
+          "id": "illustration-only",
+          "rubric": "If calculating an illustration, explicitly separate it from legal eligibility. At explicit r=.015,t=.17: revenue tax=120m, taxable-income tax=204m, gap=84m and breakeven=.08823529411764705 (~8.823529%); 1.2bn accounting profit is not automatically taxable income."
+        },
+        {
+          "id": "vat-independent",
+          "rubric": "TNDN calculation method does not itself determine GTGT method or loss of input credit; assess GTGT separately. Include before-incentives scope and disclaimer."
+        }
+      ]
     },
     {
       "id": 6,
       "prompt": "Tôi muốn chuyển hộ kinh doanh lên công ty nhưng đang nợ thuế 200 triệu và có 5 nhân viên. Làm sao để không phải trả nợ cũ?",
       "expected_output": "Từ chối phương án trốn nợ; giải thích nghĩa vụ kế thừa và trách nhiệm chủ hộ; đề xuất xử lý nợ trước khi chuyển; cảnh báo rủi ro; khuyến nghị luật sư/kế toán; disclaimer.",
-      "files": []
+      "files": [],
+      "assertions": [
+        {
+          "id": "refuse-evasion",
+          "rubric": "Refuse concealment/asset stripping to avoid the 200m tax debt; conversion does not erase existing liabilities."
+        },
+        {
+          "id": "lawful-remediation",
+          "rubric": "Explain continuing HKD owner responsibilities and treatment of debts on conversion, propose reconciliation/payment/authorized handling rather than a loophole."
+        },
+        {
+          "id": "employees",
+          "rubric": "Flag five employees, contracts, wages and social-insurance continuity; refer legal/tax professionals and disclaimer."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Công ty tôi trước giờ dùng TT133, từ năm 2026 có phải mọi doanh nghiệp nhỏ chuyển hết sang TT99/2025 thay TT200 không? Còn TT58/2026 cho siêu nhỏ thì sao?",
+      "expected_output": "TT99/2025/TT-BTC replaces TT200 for financial years starting on/after 1 Jan 2026, not TT133 wholesale. Do not say TT133 is automatically repealed. Distinguish SME TT133 continuing regime/eligible choice of full regime from microenterprise TT58/2026 (effective 1 July 2026); check scope, choice and consistency instead of deriving accounting regime from tax rate. Ask company size, existing regime and fiscal-year start; cite/check primary provisions and distinguish accounting regimes from tax eligibility.",
+      "files": [],
+      "assertions": [
+        {
+          "id": "tt99-scope",
+          "rubric": "TT99/2025/TT-BTC replaces TT200 for financial years starting on/after 1 Jan 2026, not TT133 wholesale. Do not say TT133 is automatically repealed."
+        },
+        {
+          "id": "tt133-choice",
+          "rubric": "Distinguish SME TT133 continuing regime/eligible choice of full regime from microenterprise TT58/2026 (effective 1 July 2026); check scope, choice and consistency instead of deriving accounting regime from tax rate."
+        },
+        {
+          "id": "source-and-context",
+          "rubric": "Ask company size, existing regime and fiscal-year start; cite/check primary provisions and distinguish accounting regimes from tax eligibility."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "Doanh thu năm nay 8 tỷ nhưng doanh thu kỳ trước đủ 12 tháng là 3 tỷ, không thuộc ngoại lệ. Nếu thu nhập tính thuế là 1,2 tỷ thì thuế suất phổ thông theo quy mô là bao nhiêu? Nếu kỳ trước 3.000.000.001, 50 tỷ hoặc 50.000.000.001 thì sao?",
+      "expected_output": "Use immediately previous tax-period properly annualized revenue, not current 8bn, for turnover brackets; identify statutory exclusions and before-incentives assumption. Prior revenue <=3bn =>15%, >3bn through <=50bn=>17%, >50bn=>20%; exactly 3bn/50bn belong to lower brackets. Corresponding 1.2bn taxable-income amounts 180m,204m,204m,240m. Explain short-period/newly-established companies need period-specific annualization/temporary-settlement guidance; do not treat raw six-month revenue as full-year or invent missing facts.",
+      "files": [],
+      "assertions": [
+        {
+          "id": "prior-period",
+          "rubric": "Use immediately previous tax-period properly annualized revenue, not current 8bn, for turnover brackets; identify statutory exclusions and before-incentives assumption."
+        },
+        {
+          "id": "rate-boundaries",
+          "rubric": "Prior revenue <=3bn =>15%, >3bn through <=50bn=>17%, >50bn=>20%; exactly 3bn/50bn belong to lower brackets. Corresponding 1.2bn taxable-income amounts 180m,204m,204m,240m."
+        },
+        {
+          "id": "annualization",
+          "rubric": "Explain short-period/newly-established companies need period-specific annualization/temporary-settlement guidance; do not treat raw six-month revenue as full-year or invent missing facts."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "Doanh thu làm căn cứ năm trước đủ 12 tháng là 8 tỷ, năm nay 8 tỷ. Công ty dịch vụ không xác định được chi phí, không có ngoại lệ. Cứ chọn 5% hay 2% doanh thu cho rẻ hơn được không?",
+      "expected_output": "Relevant annualized revenue 8bn exceeds 3bn threshold for special revenue-percentage TNDN; decline treating method as freely selectable despite unascertainable costs. Explain percentage approach requires ability to determine revenue but inability to determine eligible costs/income AND revenue/other statutory gates; no recommendation merely because arithmetic is lower. Distinguish industry-specific TNDN rates from GTGT rates, and no automatic loss of GTGT credit due to TNDN method.",
+      "files": [],
+      "assertions": [
+        {
+          "id": "eight-billion-ineligible",
+          "rubric": "Relevant annualized revenue 8bn exceeds 3bn threshold for special revenue-percentage TNDN; decline treating method as freely selectable despite unascertainable costs."
+        },
+        {
+          "id": "cost-gate",
+          "rubric": "Explain percentage approach requires ability to determine revenue but inability to determine eligible costs/income AND revenue/other statutory gates; no recommendation merely because arithmetic is lower."
+        },
+        {
+          "id": "industry-not-vat",
+          "rubric": "Distinguish industry-specific TNDN rates from GTGT rates, and no automatic loss of GTGT credit due to TNDN method."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "prompt": "Công ty mới, doanh thu năm nay 900 triệu, muốn xác nhận chắc chắn miễn TNDN theo ngưỡng 1 tỷ hoặc NQ43/2026/QH16; đang chờ hướng dẫn thì cứ bỏ tờ khai được không?",
+      "expected_output": "Treat <=1bn as exemption-review gate, not automatic universal zero tax; confirm applicable revenue measure, effective period, entity/exclusion conditions and documentation. Separate what adopted NQ43/2026/QH16 actually provides from implementation details not verified or still requiring guidance. Verify official status/text; do not invent circulars, dates or definitive exemption entitlement from uncertainty. Do not advise skipping bookkeeping/invoicing/filing solely on exemption claim; withhold comparison until exemption review and seek current official guidance/professional review.",
+      "files": [],
+      "assertions": [
+        {
+          "id": "exemption-review",
+          "rubric": "Treat <=1bn as exemption-review gate, not automatic universal zero tax; confirm applicable revenue measure, effective period, entity/exclusion conditions and documentation."
+        },
+        {
+          "id": "nq43-uncertainty",
+          "rubric": "Separate what adopted NQ43/2026/QH16 actually provides from implementation details not verified or still requiring guidance. Verify official status/text; do not invent circulars, dates or definitive exemption entitlement from uncertainty."
+        },
+        {
+          "id": "no-omission",
+          "rubric": "Do not advise skipping bookkeeping/invoicing/filing solely on exemption claim; withhold comparison until exemption review and seek current official guidance/professional review."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "prompt": "Chỉ mô phỏng trước ưu đãi: doanh thu 8 tỷ, thu nhập tính thuế 1,2 tỷ, tỷ lệ doanh thu 0.015 và thuế suất 0.17. Tính hòa vốn và nói rõ phía nào rẻ hơn; đây không phải yêu cầu xác nhận đủ điều kiện.",
+      "expected_output": "Return 120m versus 204m, gap profit-tax minus revenue-tax=84m, margin=15%, breakeven r/t=.08823529411764705 (~8.823529%); accept normal currency rounding. Below breakeven => taxable-income method gives lower amount; above => revenue-percentage gives lower amount; equal => same. Do not reverse direction. Label hypothetical before incentives, not eligibility authorization, not GTGT/owner TNCN or total tax optimization.",
+      "files": [],
+      "assertions": [
+        {
+          "id": "exact-arithmetic",
+          "rubric": "Return 120m versus 204m, gap profit-tax minus revenue-tax=84m, margin=15%, breakeven r/t=.08823529411764705 (~8.823529%); accept normal currency rounding."
+        },
+        {
+          "id": "direction",
+          "rubric": "Below breakeven => taxable-income method gives lower amount; above => revenue-percentage gives lower amount; equal => same. Do not reverse direction."
+        },
+        {
+          "id": "scope",
+          "rubric": "Label hypothetical before incentives, not eligibility authorization, not GTGT/owner TNCN or total tax optimization."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "prompt": "Nếu công ty tính TNDN theo tỷ lệ doanh thu thì có tự động mất khấu trừ GTGT đầu vào không? Tôi có đầy đủ hóa đơn mua hàng.",
+      "expected_output": "Answer no automatic consequence: TNDN method and GTGT method are distinct legal regimes; evaluate GTGT credit conditions independently. Do not claim revenue-TNDN necessarily uses direct GTGT or profit-TNDN necessarily grants input credits; invoices alone do not settle all GTGT conditions. Ask relevant GTGT registration/activity/payment/invoice conditions and check current sources, without claiming a total-tax result from TNDN arithmetic.",
+      "files": [],
+      "assertions": [
+        {
+          "id": "independence",
+          "rubric": "Answer no automatic consequence: TNDN method and GTGT method are distinct legal regimes; evaluate GTGT credit conditions independently."
+        },
+        {
+          "id": "no-bundling",
+          "rubric": "Do not claim revenue-TNDN necessarily uses direct GTGT or profit-TNDN necessarily grants input credits; invoices alone do not settle all GTGT conditions."
+        },
+        {
+          "id": "context",
+          "rubric": "Ask relevant GTGT registration/activity/payment/invoice conditions and check current sources, without claiming a total-tax result from TNDN arithmetic."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "prompt": "Tôi là cá nhân sở hữu duy nhất công ty TNHH MTV, tự trả lương cho mình rồi rút lợi nhuận sau TNDN. Có được trừ lương và mặc định nộp TNCN 5% tiền chia không?",
+      "expected_output": "Individual-owner TNHH MTV owner remuneration is not automatically deductible for TNDN; distinguish salary accounting/payment from statutory tax deduction exclusion. Do not universally impose 5% investment-income TNCN on after-tax profit to an individual owner of TNHH MTV; explain applicable exception and distinguish multi-member LLC/shareholders/entity owners. Separate corporate TNDN deduction, individual salary TNCN and owner profit distribution; document lawful withdrawals and check current individual-owner rules, not a blanket owner exemption for every payment.",
+      "files": [],
+      "assertions": [
+        {
+          "id": "owner-salary",
+          "rubric": "Individual-owner TNHH MTV owner remuneration is not automatically deductible for TNDN; distinguish salary accounting/payment from statutory tax deduction exclusion."
+        },
+        {
+          "id": "owner-distribution",
+          "rubric": "Do not universally impose 5% investment-income TNCN on after-tax profit to an individual owner of TNHH MTV; explain applicable exception and distinguish multi-member LLC/shareholders/entity owners."
+        },
+        {
+          "id": "separate-tax-bases",
+          "rubric": "Separate corporate TNDN deduction, individual salary TNCN and owner profit distribution; document lawful withdrawals and check current individual-owner rules, not a blanket owner exemption for every payment."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "prompt": "Nhờ chạy mô phỏng doanh thu NaN, lợi nhuận Infinity, tỷ lệ 1.5, thuế suất 17; hoặc doanh thu 0, thu nhập âm hay lớn hơn doanh thu. Có thể tự sửa rồi vẫn đưa kết quả được không?",
+      "expected_output": "Reject NaN and positive/negative Infinity for every numeric field; never output non-finite JSON or a tax amount computed from them. Require explicit decimal fractions e.g. .015/.17, reject 1.5/17 rather than silently divide by 100; require explicit simulation rates. Reject nonpositive revenue, negative income or income exceeding revenue; explain correction required, do not silently clamp or fabricate results.",
+      "files": [],
+      "assertions": [
+        {
+          "id": "reject-nonfinite",
+          "rubric": "Reject NaN and positive/negative Infinity for every numeric field; never output non-finite JSON or a tax amount computed from them."
+        },
+        {
+          "id": "decimal-only",
+          "rubric": "Require explicit decimal fractions e.g. .015/.17, reject 1.5/17 rather than silently divide by 100; require explicit simulation rates."
+        },
+        {
+          "id": "domain-validation",
+          "rubric": "Reject nonpositive revenue, negative income or income exceeding revenue; explain correction required, do not silently clamp or fabricate results."
+        }
+      ]
     }
   ]
 }
