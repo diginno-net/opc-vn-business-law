@@ -12,7 +12,7 @@
 
 1. Xác định ngành, số lao động tham gia BHXH bình quân và doanh thu/vốn theo NĐ80/2021 Điều 5. Quy mô kế toán và ngưỡng thuế là **hai phép kiểm khác nhau**.
 2. **Siêu nhỏ:** xem TT58 nếu đủ điều kiện và đúng năm áp dụng. TT58 Điều 4 khoản 3 cho chọn chế độ DNNVV, nhất quán trong năm và đổi tại đầu kỳ năm tiếp theo. Khi cân nhắc TT99, kiểm quyền lựa chọn và phạm vi tương ứng.
-3. **Nhỏ/vừa, kể cả siêu nhỏ đủ điều kiện:** xem TT133 Điều 2–3 và sửa đổi hiện hành; bản gốc loại DNNN, DN Nhà nước sở hữu trên 50%, công ty đại chúng, HTX/liên hiệp HTX, và có nhánh chế độ riêng. **TT99 không liệt kê thay TT133.** Chưa chốt thủ tục TT133 hiện tại vì TT46/2025 còn cần đọc scan và kiểm văn bản sau dự thảo.
+3. **Nhỏ/vừa, kể cả siêu nhỏ đủ điều kiện:** xem TT133 Điều 2–3 và sửa đổi hiện hành; bản gốc loại DNNN, DN Nhà nước sở hữu trên 50%, công ty đại chúng, HTX/liên hiệp HTX, và có nhánh chế độ riêng. **TT99 không liệt kê thay TT133.** Đã đối chiếu trực quan [TT46/2025 Điều 3](https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/6/46-btc.pdf), trang 3–4: thay nội dung Điều 10 TT133 về sửa đổi chế độ kế toán; hiệu lực 01/07/2025 theo Điều 7 khoản 1. Khi tự sửa mẫu/sổ/tài khoản hoặc bổ sung chỉ tiêu BCTC, kiểm nghĩa vụ ban hành quy chế hạch toán tại khoản 4 Điều 10 mới; trường hợp đặc thù cần sửa chỉ tiêu BCTC đối chiếu khoản 5. Chưa khóa toàn bộ sửa đổi/thay thế sau đó.
 4. **Chế độ DN chung:** [TT99 Điều 2](https://congbao.chinhphu.vn/van-ban/thong-tu-so-99-2025-tt-btc-46529.htm) áp dụng doanh nghiệp mọi lĩnh vực/thành phần, ngoại lệ tổ chức tín dụng và chi nhánh ngân hàng nước ngoài theo NHNN. Không chỉ dành DN lớn. **Điều 31 khoản 3 cho DNNVV lựa chọn**, nhất quán tối thiểu một kỳ kế toán năm; kiểm yêu cầu khi chuyển đổi và nhu cầu báo cáo/vay vốn.
 5. Xác định **ngày bắt đầu năm tài chính**, không lấy ngày hiệu lực làm lệnh đổi sổ giữa năm. Vượt siêu nhỏ không đồng nghĩa tự động bắt buộc TT99; vẫn xét nhánh TT133 nếu đáp ứng.
 
@@ -20,6 +20,7 @@
 
 - [TT99 Điều 31 khoản 1–2](https://congbao.chinhphu.vn/van-ban/thong-tu-so-99-2025-tt-btc-46529.htm): hiệu lực 01/01/2026, áp dụng năm tài chính bắt đầu từ/sau ngày đó; thay TT200 **trừ** phần kế toán cổ phần hóa DNNN khoản 2 tiếp tục đến khi có văn bản thay thế.
 - [TT58 Điều 12 khoản 1–2](https://congbao.chinhphu.vn/van-ban/thong-tu-so-58-2026-tt-btc-469663.htm): hiệu lực **01/07/2026**, áp dụng **năm tài chính bắt đầu từ/sau 01/07/2026**; TT132 hết hiệu lực từ ngày TT58 có hiệu lực. Với DN năm 01/01–31/12, theo câu chữ năm 01/01/2027 mới bắt đầu sau mốc: đây là **suy luận về kỳ**, không phải hướng dẫn chuyển tiếp chính thức. Chưa tìm được hướng dẫn riêng cho khoảng giao TT132/TT58 năm 2026; hỏi người hành nghề trước khi đổi sổ, không tự tạo điều chuyển tiếp.
+- **TT58 có hướng dẫn chuyển số dư:** Điều 11 quy định chuyển số dư cuối kỳ của tài khoản TT132 sang sổ/tài khoản đầu kỳ TT58. Đây là quy tắc chuyển sổ, chưa tự giải đáp khoảng giao năm dương lịch 2026 nêu trên; không nói chung rằng TT58 “không có hướng dẫn chuyển tiếp”.
 - [TT58 Điều 1, Điều 4](https://congbao.chinhphu.vn/van-ban/thong-tu-so-58-2026-tt-btc-469663.htm) hướng dẫn kế toán theo phương pháp thuế hợp lệ; **không tạo quyền lựa chọn phương pháp thuế**. Kiểm điều kiện TNDN và GTGT riêng tại [05 — Thuế](<05-tax.md>).
 
 ## Khung pháp lý
@@ -28,8 +29,8 @@
 |---|---|---|
 | Luật Kế toán 2015 (88/2015/QH13) | Điều 49 (tổ chức bộ máy), Điều 50 (trách nhiệm người đại diện), Điều 52 (người không được làm kế toán), Điều 53 (kế toán trưởng), Điều 54 (tiêu chuẩn) | IN FORCE |
 | Nghị định 174/2016/NĐ-CP | Điều 20: kế toán trưởng, phụ trách kế toán; doanh nghiệp siêu nhỏ không bắt buộc kế toán trưởng | IN FORCE |
-| [TT58/2026/TT-BTC](https://congbao.chinhphu.vn/van-ban/thong-tu-so-58-2026-tt-btc-469663.htm) | Điều 2–4; Điều 12: siêu nhỏ, phụ trách kế toán, kỳ áp dụng | Đã đối chiếu điều khoản; năm tài chính bắt đầu từ/sau 01/07/2026 |
-| [TT133/2016/TT-BTC](https://congbao.chinhphu.vn/van-ban/thong-tu-so-133-2016-tt-btc-21048/15524.htm) | Bản gốc Điều 2–3: DNNVV có điều kiện | Sửa đổi TT46/2025 và thủ tục hiện tại cần kiểm tiếp |
+| [TT58/2026/TT-BTC](https://congbao.chinhphu.vn/van-ban/thong-tu-so-58-2026-tt-btc-469663.htm) | Điều 2–4; Điều 11 chuyển số dư; Điều 12 kỳ áp dụng | Đã kiểm hình điều khoản; năm tài chính bắt đầu từ/sau 01/07/2026; chưa khóa toàn bộ sửa đổi |
+| [TT133/2016/TT-BTC](https://congbao.chinhphu.vn/van-ban/thong-tu-so-133-2016-tt-btc-21048/15524.htm) | Bản gốc Điều 2–3: DNNVV có điều kiện | TT46 Điều 3 thay Điều 10 đã kiểm hình; các sửa đổi tiếp theo chưa khóa toàn bộ |
 | [TT99/2025/TT-BTC](https://congbao.chinhphu.vn/van-ban/thong-tu-so-99-2025-tt-btc-46529.htm) | Điều 2; Điều 31: chế độ DN chung và lựa chọn DNNVV | Không thay TT133; không bắt buộc mọi DNNVV |
 | Dự án sửa đổi Luật Kế toán | Có thể thay đổi quy định liên quan | DRAFT |
 
@@ -49,6 +50,8 @@ Doanh nghiệp siêu nhỏ theo pháp luật về hỗ trợ DNNVV được bố
 
 ### Thông tư 58/2026/TT-BTC (hiệu lực 01/7/2026)
 
+**Chỉ áp dụng cho năm tài chính bắt đầu từ/sau 01/07/2026** theo Điều 12 khoản 1; đọc cảnh báo khoảng giao năm 2026 phía trên. Các điểm dưới theo Điều 2–4, không phải lệnh đổi sổ giữa năm.
+
 - Áp dụng cho doanh nghiệp siêu nhỏ; hộ kinh doanh, cá nhân kinh doanh có thể lựa chọn áp dụng.
 - **Không bắt buộc kế toán trưởng.**
 - Được bố trí người làm kế toán là cha đẻ, mẹ đẻ, cha nuôi, mẹ nuôi, vợ, chồng, con đẻ, con nuôi, anh, chị, em ruột của người đại diện theo pháp luật/người đứng đầu/Giám đốc; hoặc người đang làm quản lý, điều hành, thủ kho, thủ quỹ, người thường xuyên mua bán tài sản; hoặc thuê dịch vụ kế toán.
@@ -56,7 +59,7 @@ Doanh nghiệp siêu nhỏ theo pháp luật về hỗ trợ DNNVV được bố
 - Nếu trong năm doanh nghiệp vượt ngưỡng siêu nhỏ: tiếp tục áp dụng đến hết năm tài chính hiện tại, từ năm sau áp dụng chế độ phù hợp.
 - Doanh nghiệp siêu nhỏ có thể chọn áp dụng chế độ kế toán doanh nghiệp nhỏ và vừa nếu phù hợp, nhưng phải nhất quán trong năm tài chính.
 
-> **Lưu ý lịch sử:** trước Thông tư 58/2026, Thông tư 132/2018/TT-BTC cũng đã cho doanh nghiệp siêu nhỏ bố trí phụ trách kế toán thay kế toán trưởng. Việc "bỏ kế toán trưởng" vì thế không phải quy định mới của dự thảo luật 2026.
+> **Lưu ý lịch sử:** trước Thông tư 58/2026, [TT132/2018/TT-BTC Điều 8 khoản 1](https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2018/12/28371/25710-2-2019191-192132-2018-tt-btcpdf) (trang PDF 3, trang in 4) cũng đã cho doanh nghiệp siêu nhỏ bố trí phụ trách kế toán thay kế toán trưởng. Việc "bỏ kế toán trưởng" vì thế không phải quy định mới của dự thảo luật 2026.
 
 ## Người không được làm kế toán — ngoại lệ cho công ty một người
 

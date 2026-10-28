@@ -125,7 +125,7 @@ Nội dung pháp lý/kinh doanh đăng chủ yếu ở nhóm Tự động hóa; 
 - **Thuế/kế toán rà soát một phần ngày 28/10/2026**; không phải xác nhận hiệu lực toàn bộ tài liệu. Nội dung mô hình/quản trị/dự thảo khác giữ mốc 17/10/2026 và phải kiểm lại trước dùng.
 - Dự thảo Luật Phát triển DNNVV: **chưa phải luật theo hồ sơ 17/10**, dự kiến hiệu lực 01/7/2027; cần kiểm tiến trình mới trước trích dẫn.
 - TT58/2026: hiệu lực 01/7/2026, áp dụng năm tài chính bắt đầu từ/sau ngày đó. TT99/2025: hiệu lực 01/01/2026; DNNVV có quyền lựa chọn, không mặc nhiên thay TT133.
-- Chưa khóa toàn bộ sửa đổi trên VBPL, chi tiết sửa TT133 và nghị định hướng dẫn NQ43 cuối cùng. Xem giới hạn tại `references/00-legal-status.md` và `references/08-sources.md`.
+- Đã kiểm trực quan TT46 Điều 3 sửa Điều 10 TT133 và TT99 Điều 2/31; chưa khóa toàn bộ chuỗi sửa đổi trên VBPL hoặc nghị định hướng dẫn NQ43 cuối cùng. Xem giới hạn tại `references/00-legal-status.md` và `references/08-sources.md`.
 - Kiểm văn bản hiện hành ở mỗi lần tư vấn thuế; không chờ hết 6 tháng mới kiểm.
 
 ## Miễn trừ trách nhiệm (tóm tắt)

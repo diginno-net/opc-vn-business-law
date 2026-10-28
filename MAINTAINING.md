@@ -9,7 +9,7 @@ Tài liệu dành cho người duy trì skill. Trước khi phát hành, chạy 
 - `python3 -B scripts/run_evals.py`: **58/58 ca CLI pass**; `skill_grading.status=not_run` — chưa chạy/chấm bộ câu trả lời mô hình.
 - `--self-test`, `git diff --check`, hai lệnh đóng gói và `audit_public.sh`: pass. Quét mẫu không thay việc soát thủ công dữ liệu riêng tư hoặc xác minh luật.
 - Review độc lập code và đối chiếu tài liệu/CLI không phát hiện lỗi quan trọng trong phạm vi đã sửa; không chứng nhận hiệu lực pháp luật toàn diện.
-- Còn phải kiểm nguồn: sửa đổi TT133/TT46, hướng dẫn chuyển tiếp TT58 năm 2026, nghị định hướng dẫn NQ43 cuối cùng. Nội dung ngoài thuế/kế toán chưa được rà toàn bộ.
+- Lượt legal-docs-vn bổ sung 28/10 đã kiểm hình TT46 Điều 3/7 (sửa Điều 10 TT133) và TT99 Điều 2/31; tải đủ 10 phần TT99. TT58 có Điều 11 chuyển số dư; còn phải kiểm chuỗi sửa đổi sau đó, hướng dẫn riêng cho khoảng giao năm dương lịch 2026, nghị định hướng dẫn NQ43 cuối cùng. Nội dung ngoài thuế/kế toán chưa được rà toàn bộ.
 - ZIP chứa đầy đủ eval/test; `.skill` chứa runtime/tài liệu để cài agent. Builder không di chuyển `.git`, không xóa cả thư mục bản đóng gói cũ. Đóng gói local không đồng nghĩa được phép publish.
 
 ## 1. Trước khi publish — checklist

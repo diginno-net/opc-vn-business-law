@@ -10,6 +10,7 @@
 - Thêm regression test stdlib, eval CLI tự động và rubric câu trả lời có cơ chế nhận điểm/bằng chứng; không coi test số học là benchmark tư vấn pháp lý.
 - Phạm vi rà soát pháp lý **một phần** ngày 28/10; không tuyên bố cập nhật toàn bộ luật, hiệu lực TT133 hoặc nghị định hướng dẫn NQ43 cuối cùng.
 - Đóng gói theo danh sách nguồn công khai, không di chuyển `.git` hay xóa cả `dist`; ZIP đầy đủ có test/eval, `.skill` chỉ chứa runtime/tài liệu cài agent.
+- Kiểm bổ sung theo legal-docs-vn: tải đủ 10 phần TT99; kiểm hình TT46 Điều 3/7 sửa Điều 10 TT133; bổ sung TT58 Điều 11 chuyển số dư. Không biến việc chưa tìm được hướng dẫn riêng năm dương lịch 2026 thành khẳng định không có quy tắc chuyển sổ.
 
 ## 1.0.2 — 2026-10-18
 
