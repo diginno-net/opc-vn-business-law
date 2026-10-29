@@ -33,8 +33,8 @@ Cần phân biệt với:
 
 - Đăng ký tại UBND cấp xã/phường; không có tư cách pháp nhân.
 - Chủ hộ (hoặc các thành viên hộ gia đình) chịu trách nhiệm bằng **toàn bộ tài sản** với nợ của hộ.
-- Quy mô: sử dụng **dưới 10 lao động**; nếu vượt, phải chuyển sang doanh nghiệp (kiểm tra quy định hiện hành).
-- Không áp dụng phương pháp khấu trừ GTGT như doanh nghiệp; thuế thường theo phương pháp khoán/trực tiếp (đang thay đổi lộ trình 2025–2026).
+- Quy mô lao động/điều kiện chuyển đổi: **chưa rà soát hiện hành trong đợt thuế/kế toán này**. Không dùng ngưỡng “10 lao động” trong tài liệu cũ để kết luận bắt buộc chuyển thành DN; kiểm văn bản đăng ký kinh doanh hiện hành trước tư vấn.
+- Thuế HKD/cá nhân phải kiểm theo kỳ và pháp luật riêng; [NQ198/2025/QH15 Điều 10 khoản 6](https://xaydungchinhsach.chinhphu.vn/nghi-quyet-198-2025-qh15-ve-mot-so-co-che-chinh-sach-dac-biet-phat-trien-kinh-te-tu-nhan-119250517191622422.htm) chấm dứt phương pháp khoán từ **01/01/2026**, không mô tả khoán như mặc định hiện hành. GTGT và TNCN kinh doanh là hai phép kiểm riêng, không dùng bảng TNDN của DN tại [05 — Thuế](<05-tax.md>) cho HKD.
 - Không phù hợp khi cần đấu thầu, ký hợp đồng lớn, vay ngân hàng quy mô, hoặc gọi vốn.
 
 **Ưu:** đơn giản, chi phí thấp, linh hoạt.

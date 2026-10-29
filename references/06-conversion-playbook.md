@@ -68,7 +68,7 @@ Thành phần cơ bản (kiểm tra mẫu hiện hành):
 
 - Xác nhận mã số thuế mới, phương pháp tính GTGT.
 - Đăng ký mẫu hóa đơn điện tử, chữ ký số với cơ quan thuế.
-- Kiểm tra lệ phí môn bài và diện miễn (doanh nghiệp mới; chuyển đổi từ hộ kinh doanh).
+- [NQ198/2025/QH15 Điều 10 khoản 7](https://xaydungchinhsach.chinhphu.vn/nghi-quyet-198-2025-qh15-ve-mot-so-co-che-chinh-sach-dac-biet-phat-trien-kinh-te-tu-nhan-119250517191622422.htm) chấm dứt thu/nộp môn bài từ **01/01/2026**: không lập nghĩa vụ mới từ 2026; rà riêng tồn đọng trước đó.
 
 ### Bước 7 — Ngân hàng và thanh toán
 

@@ -2,6 +2,16 @@
 
 Tài liệu dành cho người duy trì skill. Trước khi phát hành, chạy qua checklist bên dưới.
 
+## Kiểm chứng bản sửa 1.1.0 — 28/10/2026 (local, chưa phát hành)
+
+- `quick_validate.py`: metadata skill hợp lệ.
+- `python3 -B -m unittest discover -s tests -q`: **41 test pass** (số học/cổng CLI, runner/grader, đóng gói).
+- `python3 -B scripts/run_evals.py`: **58/58 ca CLI pass**; `skill_grading.status=not_run` — chưa chạy/chấm bộ câu trả lời mô hình.
+- `--self-test`, `git diff --check`, hai lệnh đóng gói và `audit_public.sh`: pass. Quét mẫu không thay việc soát thủ công dữ liệu riêng tư hoặc xác minh luật.
+- Review độc lập code và đối chiếu tài liệu/CLI không phát hiện lỗi quan trọng trong phạm vi đã sửa; không chứng nhận hiệu lực pháp luật toàn diện.
+- Lượt legal-docs-vn bổ sung 28/10 đã kiểm hình TT46 Điều 3/7 (sửa Điều 10 TT133) và TT99 Điều 2/31; tải đủ 10 phần TT99. TT58 có Điều 11 chuyển số dư; còn phải kiểm chuỗi sửa đổi sau đó, hướng dẫn riêng cho khoảng giao năm dương lịch 2026, nghị định hướng dẫn NQ43 cuối cùng. Nội dung ngoài thuế/kế toán chưa được rà toàn bộ.
+- ZIP chứa đầy đủ eval/test; `.skill` chứa runtime/tài liệu để cài agent. Builder không di chuyển `.git`, không xóa cả thư mục bản đóng gói cũ. Đóng gói local không đồng nghĩa được phép publish.
+
 ## 1. Trước khi publish — checklist
 
 - [ ] `SKILL.md` có `name`, `description`, `license`, `metadata.version`, `metadata.as_of`.
@@ -10,6 +20,8 @@ Tài liệu dành cho người duy trì skill. Trước khi phát hành, chạy 
 - [ ] `DISCLAIMER.md` có tiếng Việt + tiếng Anh; xuất hiện trong `SKILL.md` và `README.md`.
 - [ ] Không có dữ liệu nội bộ: tên khách, số liệu sống, giá nội bộ, chiến lược kinh doanh, token, đường dẫn máy cá nhân.
 - [ ] `python3 scripts/so_sanh_thue.py --self-test` chạy OK.
+- [ ] `python3 -m unittest discover -s tests -v` và `python3 scripts/run_evals.py` chạy OK; các ca thiếu dữ kiện không trả số chắc chắn.
+- [ ] Rubric câu trả lời được chấm riêng với bằng chứng; chưa chạy model eval thì báo rõ, không dùng kết quả CLI thay thế.
 - [ ] `CHANGELOG.md` khớp version.
 - [ ] Không có link chết trong `references/08-sources.md`.
 

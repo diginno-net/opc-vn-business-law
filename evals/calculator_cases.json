@@ -1,0 +1,1133 @@
+{
+  "schema_version": 1,
+  "notes": "Contract regression cases, not a legal opinion or model benchmark. Prior revenue supplied already annualized. Simulation uses decimal rates and runs before incentives.",
+  "cases": [
+    {
+      "id": "missing-context-default",
+      "args": [
+        "--doanh-thu",
+        "8e9"
+      ],
+      "exit_code": 0,
+      "kind": "assessment",
+      "expected": {
+        "trang_thai": "thieu_du_kien",
+        "thue_suat": null,
+        "ty_le_doanh_thu": null,
+        "so_sanh": null
+      },
+      "nonempty": [
+        "canh_bao",
+        "du_kien_thieu"
+      ]
+    },
+    {
+      "id": "missing-prior-revenue",
+      "args": [
+        "--doanh-thu",
+        "8e9",
+        "--nganh",
+        "san-xuat",
+        "--xac-dinh-chi-phi",
+        "khong",
+        "--ngoai-le",
+        "khong"
+      ],
+      "exit_code": 0,
+      "kind": "assessment",
+      "expected": {
+        "trang_thai": "thieu_du_kien",
+        "so_sanh": null
+      },
+      "nonempty": [
+        "du_kien_thieu"
+      ]
+    },
+    {
+      "id": "missing-industry",
+      "args": [
+        "--doanh-thu",
+        "8e9",
+        "--doanh-thu-can-cu",
+        "2e9",
+        "--xac-dinh-chi-phi",
+        "khong",
+        "--ngoai-le",
+        "khong"
+      ],
+      "exit_code": 0,
+      "kind": "assessment",
+      "expected": {
+        "trang_thai": "thieu_du_kien",
+        "so_sanh": null
+      },
+      "nonempty": [
+        "du_kien_thieu"
+      ]
+    },
+    {
+      "id": "missing-cost-capability",
+      "args": [
+        "--doanh-thu",
+        "8e9",
+        "--doanh-thu-can-cu",
+        "2e9",
+        "--nganh",
+        "san-xuat",
+        "--ngoai-le",
+        "khong"
+      ],
+      "exit_code": 0,
+      "kind": "assessment",
+      "expected": {
+        "trang_thai": "thieu_du_kien",
+        "so_sanh": null
+      },
+      "nonempty": [
+        "du_kien_thieu"
+      ]
+    },
+    {
+      "id": "missing-exceptions",
+      "args": [
+        "--doanh-thu",
+        "8e9",
+        "--doanh-thu-can-cu",
+        "2e9",
+        "--nganh",
+        "san-xuat",
+        "--xac-dinh-chi-phi",
+        "khong"
+      ],
+      "exit_code": 0,
+      "kind": "assessment",
+      "expected": {
+        "trang_thai": "thieu_du_kien",
+        "so_sanh": null
+      },
+      "nonempty": [
+        "du_kien_thieu"
+      ]
+    },
+    {
+      "id": "prior-exact-3bn",
+      "args": [
+        "--doanh-thu",
+        "8e9",
+        "--doanh-thu-can-cu",
+        "3e9",
+        "--nganh",
+        "san-xuat",
+        "--xac-dinh-chi-phi",
+        "khong",
+        "--ngoai-le",
+        "khong"
+      ],
+      "exit_code": 0,
+      "kind": "assessment",
+      "expected": {
+        "trang_thai": "du_dieu_kien_so_bo",
+        "thue_suat": 0.15,
+        "ty_le_doanh_thu": 0.012,
+        "so_sanh": null
+      }
+    },
+    {
+      "id": "ineligible-base-3000000001",
+      "args": [
+        "--doanh-thu",
+        "8e9",
+        "--doanh-thu-can-cu",
+        "3000000001",
+        "--nganh",
+        "san-xuat",
+        "--xac-dinh-chi-phi",
+        "khong",
+        "--ngoai-le",
+        "khong",
+        "--loi-nhuan",
+        "1.2e9"
+      ],
+      "exit_code": 0,
+      "kind": "assessment",
+      "expected": {
+        "trang_thai": "khong_du_dieu_kien",
+        "thue_suat": 0.17,
+        "so_sanh": null
+      }
+    },
+    {
+      "id": "ineligible-base-8e9",
+      "args": [
+        "--doanh-thu",
+        "8e9",
+        "--doanh-thu-can-cu",
+        "8e9",
+        "--nganh",
+        "san-xuat",
+        "--xac-dinh-chi-phi",
+        "khong",
+        "--ngoai-le",
+        "khong",
+        "--loi-nhuan",
+        "1.2e9"
+      ],
+      "exit_code": 0,
+      "kind": "assessment",
+      "expected": {
+        "trang_thai": "khong_du_dieu_kien",
+        "thue_suat": 0.17,
+        "so_sanh": null
+      }
+    },
+    {
+      "id": "ineligible-base-5e10",
+      "args": [
+        "--doanh-thu",
+        "8e9",
+        "--doanh-thu-can-cu",
+        "5e10",
+        "--nganh",
+        "san-xuat",
+        "--xac-dinh-chi-phi",
+        "khong",
+        "--ngoai-le",
+        "khong",
+        "--loi-nhuan",
+        "1.2e9"
+      ],
+      "exit_code": 0,
+      "kind": "assessment",
+      "expected": {
+        "trang_thai": "khong_du_dieu_kien",
+        "thue_suat": 0.17,
+        "so_sanh": null
+      }
+    },
+    {
+      "id": "ineligible-base-50000000001",
+      "args": [
+        "--doanh-thu",
+        "8e9",
+        "--doanh-thu-can-cu",
+        "50000000001",
+        "--nganh",
+        "san-xuat",
+        "--xac-dinh-chi-phi",
+        "khong",
+        "--ngoai-le",
+        "khong",
+        "--loi-nhuan",
+        "1.2e9"
+      ],
+      "exit_code": 0,
+      "kind": "assessment",
+      "expected": {
+        "trang_thai": "khong_du_dieu_kien",
+        "thue_suat": 0.2,
+        "so_sanh": null
+      }
+    },
+    {
+      "id": "known-costs-ineligible",
+      "args": [
+        "--doanh-thu",
+        "2e9",
+        "--doanh-thu-can-cu",
+        "2e9",
+        "--nganh",
+        "san-xuat",
+        "--xac-dinh-chi-phi",
+        "co",
+        "--ngoai-le",
+        "khong",
+        "--loi-nhuan",
+        "1e8"
+      ],
+      "exit_code": 0,
+      "kind": "assessment",
+      "expected": {
+        "trang_thai": "khong_du_dieu_kien",
+        "so_sanh": null
+      }
+    },
+    {
+      "id": "explicit-exception-expert",
+      "args": [
+        "--doanh-thu",
+        "2e9",
+        "--doanh-thu-can-cu",
+        "2e9",
+        "--nganh",
+        "san-xuat",
+        "--xac-dinh-chi-phi",
+        "khong",
+        "--ngoai-le",
+        "co",
+        "--loi-nhuan",
+        "1e8"
+      ],
+      "exit_code": 0,
+      "kind": "assessment",
+      "expected": {
+        "trang_thai": "can_chuyen_chuyen_gia",
+        "so_sanh": null
+      },
+      "nonempty": [
+        "canh_bao"
+      ]
+    },
+    {
+      "id": "exemption-review-9e8",
+      "args": [
+        "--doanh-thu",
+        "8e9",
+        "--doanh-thu-can-cu",
+        "9e8",
+        "--nganh",
+        "san-xuat",
+        "--xac-dinh-chi-phi",
+        "khong",
+        "--ngoai-le",
+        "khong",
+        "--loi-nhuan",
+        "1e8"
+      ],
+      "exit_code": 0,
+      "kind": "assessment",
+      "expected": {
+        "trang_thai": "can_kiem_tra_mien_thue",
+        "so_sanh": null
+      },
+      "nonempty": [
+        "canh_bao"
+      ]
+    },
+    {
+      "id": "exemption-review-1e9",
+      "args": [
+        "--doanh-thu",
+        "8e9",
+        "--doanh-thu-can-cu",
+        "1e9",
+        "--nganh",
+        "san-xuat",
+        "--xac-dinh-chi-phi",
+        "khong",
+        "--ngoai-le",
+        "khong",
+        "--loi-nhuan",
+        "1e8"
+      ],
+      "exit_code": 0,
+      "kind": "assessment",
+      "expected": {
+        "trang_thai": "can_kiem_tra_mien_thue",
+        "so_sanh": null
+      },
+      "nonempty": [
+        "canh_bao"
+      ]
+    },
+    {
+      "id": "above-exemption-boundary",
+      "args": [
+        "--doanh-thu",
+        "8e9",
+        "--doanh-thu-can-cu",
+        "1000000001",
+        "--nganh",
+        "san-xuat",
+        "--xac-dinh-chi-phi",
+        "khong",
+        "--ngoai-le",
+        "khong"
+      ],
+      "exit_code": 0,
+      "kind": "assessment",
+      "expected": {
+        "trang_thai": "du_dieu_kien_so_bo",
+        "thue_suat": 0.15,
+        "so_sanh": null
+      }
+    },
+    {
+      "id": "eligible-with-income",
+      "args": [
+        "--doanh-thu",
+        "8e9",
+        "--doanh-thu-can-cu",
+        "2e9",
+        "--nganh",
+        "san-xuat",
+        "--xac-dinh-chi-phi",
+        "khong",
+        "--ngoai-le",
+        "khong",
+        "--loi-nhuan",
+        "1.2e9"
+      ],
+      "exit_code": 0,
+      "kind": "assessment",
+      "expected": {
+        "trang_thai": "du_dieu_kien_so_bo",
+        "thue_suat": 0.15,
+        "ty_le_doanh_thu": 0.012,
+        "so_sanh.thue_theo_doanh_thu": 96000000.0,
+        "so_sanh.thue_theo_loi_nhuan": 180000000.0,
+        "so_sanh.bien_hoa_von": 0.08
+      }
+    },
+    {
+      "id": "simulation-explicit-17",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "8e9",
+        "--loi-nhuan",
+        "1.2e9",
+        "--ty-le",
+        ".015",
+        "--thue-suat",
+        ".17"
+      ],
+      "exit_code": 0,
+      "kind": "simulation",
+      "expected": {
+        "che_do": "mo-phong",
+        "thue_theo_doanh_thu": 120000000.0,
+        "thue_theo_loi_nhuan": 204000000.0,
+        "bien_loi_nhuan": 0.15,
+        "bien_hoa_von": 0.08823529411764705,
+        "chenh_lech": 84000000.0
+      }
+    },
+    {
+      "id": "simulation-income-alias",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "8e9",
+        "--thu-nhap-tinh-thue",
+        "1.2e9",
+        "--ty-le",
+        ".015",
+        "--thue-suat",
+        ".17"
+      ],
+      "exit_code": 0,
+      "kind": "simulation",
+      "expected": {
+        "thue_theo_loi_nhuan": 204000000.0
+      }
+    },
+    {
+      "id": "simulation-below-breakeven",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "8e9",
+        "--loi-nhuan",
+        "4e8",
+        "--ty-le",
+        ".015",
+        "--thue-suat",
+        ".17"
+      ],
+      "exit_code": 0,
+      "kind": "simulation",
+      "expected": {
+        "thue_theo_loi_nhuan": 68000000.0,
+        "chenh_lech": -52000000.0
+      }
+    },
+    {
+      "id": "simulation-exact-breakeven",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "8e9",
+        "--loi-nhuan",
+        "6e8",
+        "--ty-le",
+        ".015",
+        "--thue-suat",
+        ".2"
+      ],
+      "exit_code": 0,
+      "kind": "simulation",
+      "expected": {
+        "thue_theo_loi_nhuan": 120000000.0,
+        "chenh_lech": 0,
+        "bien_hoa_von": 0.075
+      }
+    },
+    {
+      "id": "missing-revenue",
+      "args": [],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "sim-missing-rates",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "8e9",
+        "--loi-nhuan",
+        "1.2e9"
+      ],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "sim-missing-income",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "8e9",
+        "--ty-le",
+        ".015",
+        "--thue-suat",
+        ".17"
+      ],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "unknown-industry",
+      "args": [
+        "--doanh-thu",
+        "8e9",
+        "--nganh",
+        "unknown"
+      ],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "invalid-revenue-0",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "0",
+        "--loi-nhuan",
+        "1.2e9",
+        "--ty-le",
+        ".015",
+        "--thue-suat",
+        ".17"
+      ],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "invalid-revenue--1",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "-1",
+        "--loi-nhuan",
+        "1.2e9",
+        "--ty-le",
+        ".015",
+        "--thue-suat",
+        ".17"
+      ],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "invalid-revenue-NaN",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "NaN",
+        "--loi-nhuan",
+        "1.2e9",
+        "--ty-le",
+        ".015",
+        "--thue-suat",
+        ".17"
+      ],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "invalid-revenue-Infinity",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "Infinity",
+        "--loi-nhuan",
+        "1.2e9",
+        "--ty-le",
+        ".015",
+        "--thue-suat",
+        ".17"
+      ],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "invalid-revenue--Infinity",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "-Infinity",
+        "--loi-nhuan",
+        "1.2e9",
+        "--ty-le",
+        ".015",
+        "--thue-suat",
+        ".17"
+      ],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "invalid-income--1",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "8e9",
+        "--loi-nhuan",
+        "-1",
+        "--ty-le",
+        ".015",
+        "--thue-suat",
+        ".17"
+      ],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "adjusted-taxable-income-above-sales",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "8e9",
+        "--thu-nhap-tinh-thue",
+        "9e9",
+        "--ty-le",
+        ".015",
+        "--thue-suat",
+        ".17"
+      ],
+      "exit_code": 0,
+      "kind": "simulation",
+      "expected": {"thue_theo_loi_nhuan": 1530000000, "thue_theo_doanh_thu": 120000000}
+    },
+    {
+      "id": "invalid-income-NaN",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "8e9",
+        "--loi-nhuan",
+        "NaN",
+        "--ty-le",
+        ".015",
+        "--thue-suat",
+        ".17"
+      ],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "invalid-income-Infinity",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "8e9",
+        "--loi-nhuan",
+        "Infinity",
+        "--ty-le",
+        ".015",
+        "--thue-suat",
+        ".17"
+      ],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "invalid-income--Infinity",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "8e9",
+        "--loi-nhuan",
+        "-Infinity",
+        "--ty-le",
+        ".015",
+        "--thue-suat",
+        ".17"
+      ],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "invalid-rate-0",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "8e9",
+        "--loi-nhuan",
+        "1.2e9",
+        "--ty-le",
+        "0",
+        "--thue-suat",
+        ".17"
+      ],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "invalid-rate--0.01",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "8e9",
+        "--loi-nhuan",
+        "1.2e9",
+        "--ty-le",
+        "-0.01",
+        "--thue-suat",
+        ".17"
+      ],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "invalid-rate-1.5",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "8e9",
+        "--loi-nhuan",
+        "1.2e9",
+        "--ty-le",
+        "1.5",
+        "--thue-suat",
+        ".17"
+      ],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "invalid-rate-NaN",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "8e9",
+        "--loi-nhuan",
+        "1.2e9",
+        "--ty-le",
+        "NaN",
+        "--thue-suat",
+        ".17"
+      ],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "invalid-rate-Infinity",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "8e9",
+        "--loi-nhuan",
+        "1.2e9",
+        "--ty-le",
+        "Infinity",
+        "--thue-suat",
+        ".17"
+      ],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "invalid-rate--Infinity",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "8e9",
+        "--loi-nhuan",
+        "1.2e9",
+        "--ty-le",
+        "-Infinity",
+        "--thue-suat",
+        ".17"
+      ],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "invalid-tax-rate-0",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "8e9",
+        "--loi-nhuan",
+        "1.2e9",
+        "--ty-le",
+        ".015",
+        "--thue-suat",
+        "0"
+      ],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "invalid-tax-rate--0.01",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "8e9",
+        "--loi-nhuan",
+        "1.2e9",
+        "--ty-le",
+        ".015",
+        "--thue-suat",
+        "-0.01"
+      ],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "invalid-tax-rate-17",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "8e9",
+        "--loi-nhuan",
+        "1.2e9",
+        "--ty-le",
+        ".015",
+        "--thue-suat",
+        "17"
+      ],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "invalid-tax-rate-NaN",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "8e9",
+        "--loi-nhuan",
+        "1.2e9",
+        "--ty-le",
+        ".015",
+        "--thue-suat",
+        "NaN"
+      ],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "invalid-tax-rate-Infinity",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "8e9",
+        "--loi-nhuan",
+        "1.2e9",
+        "--ty-le",
+        ".015",
+        "--thue-suat",
+        "Infinity"
+      ],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "invalid-tax-rate--Infinity",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "8e9",
+        "--loi-nhuan",
+        "1.2e9",
+        "--ty-le",
+        ".015",
+        "--thue-suat",
+        "-Infinity"
+      ],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "invalid-prior--1",
+      "args": [
+        "--doanh-thu",
+        "8e9",
+        "--doanh-thu-can-cu",
+        "-1"
+      ],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "invalid-prior-NaN",
+      "args": [
+        "--doanh-thu",
+        "8e9",
+        "--doanh-thu-can-cu",
+        "NaN"
+      ],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "invalid-prior-Infinity",
+      "args": [
+        "--doanh-thu",
+        "8e9",
+        "--doanh-thu-can-cu",
+        "Infinity"
+      ],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "invalid-prior--Infinity",
+      "args": [
+        "--doanh-thu",
+        "8e9",
+        "--doanh-thu-can-cu",
+        "-Infinity"
+      ],
+      "exit_code": 2,
+      "kind": "error",
+      "expected": {}
+    },
+    {
+      "id": "industry-hang-hoa",
+      "args": [
+        "--doanh-thu",
+        "2e9",
+        "--doanh-thu-can-cu",
+        "2e9",
+        "--nganh",
+        "hang-hoa",
+        "--xac-dinh-chi-phi",
+        "khong",
+        "--ngoai-le",
+        "khong"
+      ],
+      "kind": "assessment",
+      "exit_code": 0,
+      "expected": {
+        "trang_thai": "du_dieu_kien_so_bo",
+        "ty_le_doanh_thu": 0.003,
+        "thue_suat": 0.15,
+        "so_sanh": null
+      }
+    },
+    {
+      "id": "industry-san-xuat",
+      "args": [
+        "--doanh-thu",
+        "2e9",
+        "--doanh-thu-can-cu",
+        "2e9",
+        "--nganh",
+        "san-xuat",
+        "--xac-dinh-chi-phi",
+        "khong",
+        "--ngoai-le",
+        "khong"
+      ],
+      "kind": "assessment",
+      "exit_code": 0,
+      "expected": {
+        "trang_thai": "du_dieu_kien_so_bo",
+        "ty_le_doanh_thu": 0.012,
+        "thue_suat": 0.15,
+        "so_sanh": null
+      }
+    },
+    {
+      "id": "industry-dich-vu",
+      "args": [
+        "--doanh-thu",
+        "2e9",
+        "--doanh-thu-can-cu",
+        "2e9",
+        "--nganh",
+        "dich-vu",
+        "--xac-dinh-chi-phi",
+        "khong",
+        "--ngoai-le",
+        "khong"
+      ],
+      "kind": "assessment",
+      "exit_code": 0,
+      "expected": {
+        "trang_thai": "du_dieu_kien_so_bo",
+        "ty_le_doanh_thu": 0.015,
+        "thue_suat": 0.15,
+        "so_sanh": null
+      }
+    },
+    {
+      "id": "industry-cho-thue-dai-ly",
+      "args": [
+        "--doanh-thu",
+        "2e9",
+        "--doanh-thu-can-cu",
+        "2e9",
+        "--nganh",
+        "cho-thue-dai-ly",
+        "--xac-dinh-chi-phi",
+        "khong",
+        "--ngoai-le",
+        "khong"
+      ],
+      "kind": "assessment",
+      "exit_code": 0,
+      "expected": {
+        "trang_thai": "du_dieu_kien_so_bo",
+        "ty_le_doanh_thu": 0.04,
+        "thue_suat": 0.15,
+        "so_sanh": null
+      }
+    },
+    {
+      "id": "industry-noi-dung-so",
+      "args": [
+        "--doanh-thu",
+        "2e9",
+        "--doanh-thu-can-cu",
+        "2e9",
+        "--nganh",
+        "noi-dung-so",
+        "--xac-dinh-chi-phi",
+        "khong",
+        "--ngoai-le",
+        "khong"
+      ],
+      "kind": "assessment",
+      "exit_code": 0,
+      "expected": {
+        "trang_thai": "du_dieu_kien_so_bo",
+        "ty_le_doanh_thu": 0.04,
+        "thue_suat": 0.15,
+        "so_sanh": null
+      }
+    },
+    {
+      "id": "industry-khac",
+      "args": [
+        "--doanh-thu",
+        "2e9",
+        "--doanh-thu-can-cu",
+        "2e9",
+        "--nganh",
+        "khac",
+        "--xac-dinh-chi-phi",
+        "khong",
+        "--ngoai-le",
+        "khong"
+      ],
+      "kind": "assessment",
+      "exit_code": 0,
+      "expected": {
+        "trang_thai": "du_dieu_kien_so_bo",
+        "ty_le_doanh_thu": 0.005,
+        "thue_suat": 0.15,
+        "so_sanh": null
+      }
+    },
+    {
+      "id": "assessment-rate-override",
+      "args": [
+        "--doanh-thu",
+        "8e9",
+        "--ty-le",
+        ".015"
+      ],
+      "kind": "error",
+      "exit_code": 2,
+      "expected": {}
+    },
+    {
+      "id": "simulation-gating-flags",
+      "args": [
+        "--che-do",
+        "mo-phong",
+        "--doanh-thu",
+        "8e9",
+        "--loi-nhuan",
+        "1.2e9",
+        "--ty-le",
+        ".015",
+        "--thue-suat",
+        ".17",
+        "--ngoai-le",
+        "khong"
+      ],
+      "kind": "error",
+      "exit_code": 2,
+      "expected": {}
+    }
+  ]
+}

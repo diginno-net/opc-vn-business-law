@@ -1,6 +1,7 @@
 # 02 — Dự thảo Luật Phát triển DNNVV 2026 và "doanh nghiệp một người"
 
 > **TRẠNG THÁI: DỰ THẢO — CHƯA PHẢI LUẬT.** Không trích dẫn như quy định đang có hiệu lực.
+> **Tri thức lịch sử ngày 17/10/2026:** giữ nguyên nội dung dự thảo và tiến trình đã ghi nhận lúc đó; đợt rà thuế/kế toán 28/10 không xác nhận bản này còn mới nhất hoặc tiến trình chưa đổi. Kiểm lại trước trả lời. Phần thuế hiện hành xem [05 — Thuế](<05-tax.md>); lời “được chọn” trong trích dẫn dự thảo không tạo quyền chọn hiện tại.
 
 ## Tóm tắt
 
@@ -85,7 +86,7 @@ Dự thảo để Chính phủ quy định chi tiết tiêu chí (Điều 4), n�
 | Không có Chủ tịch công ty | Điều 85 Luật Doanh nghiệp 2020: **bắt buộc** có Chủ tịch; chủ sở hữu là Chủ tịch | Cho phép không có; Giám đốc có quyền, nghĩa vụ của Chủ tịch | **Mới hoàn toàn**, xung đột Luật Doanh nghiệp |
 | Không có kế toán trưởng | Nghị định 174/2016 (doanh nghiệp siêu nhỏ chỉ cần phụ trách kế toán); Thông tư 58/2026/TT-BTC (từ 1/7/2026) | Lặp lại gần nguyên văn | **Không mới** |
 | Người nhà/thủ kho/thủ quỹ làm kế toán | Thông tư 58/2026 cho phép với doanh nghiệp siêu nhỏ | Cho phép với nhóm hẹp hơn | **Không mới** |
-| Chọn thuế % doanh thu hoặc kê khai | Theo pháp luật thuế | Cho phép chọn | **Mới một phần**; có thể chuyển sang luật thuế |
+| Thuế % doanh thu hoặc trên thu nhập | Nhánh DN tại Luật67 Điều 11 khoản 2 điểm b, NĐ320 Điều 12 khoản 4 có ngưỡng ≤3 tỷ và không xác định được chi phí/thu nhập; không phải tự chọn cách rẻ hơn (xem [05](<05-tax.md>)) | Bản dự thảo 28/8 ghi cho phép chọn | Đề xuất lịch sử, không tạo quyền thuế hiện tại; phải kiểm cả luật thuế và miễn/giảm |
 
 ## Xung đột với Luật Doanh nghiệp 2020
 

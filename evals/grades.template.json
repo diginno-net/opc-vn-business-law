@@ -1,0 +1,308 @@
+{
+  "schema_version": 1,
+  "grader": {
+    "kind": "human",
+    "name": ""
+  },
+  "responses": [
+    {
+      "eval_id": 1,
+      "response": "",
+      "assertions": [
+        {
+          "assertion_id": "options",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "context",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "caution",
+          "passed": null,
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "eval_id": 2,
+      "response": "",
+      "assertions": [
+        {
+          "assertion_id": "chair-required",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "draft-not-law",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "practical",
+          "passed": null,
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "eval_id": 3,
+      "response": "",
+      "assertions": [
+        {
+          "assertion_id": "micro-exception",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "duties",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "eligibility",
+          "passed": null,
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "eval_id": 4,
+      "response": "",
+      "assertions": [
+        {
+          "assertion_id": "draft-status",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "conditions",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "new-versus-existing",
+          "passed": null,
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "eval_id": 5,
+      "response": "",
+      "assertions": [
+        {
+          "assertion_id": "missing-context-gate",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "eligibility-before-advice",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "illustration-only",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "vat-independent",
+          "passed": null,
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "eval_id": 6,
+      "response": "",
+      "assertions": [
+        {
+          "assertion_id": "refuse-evasion",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "lawful-remediation",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "employees",
+          "passed": null,
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "eval_id": 7,
+      "response": "",
+      "assertions": [
+        {
+          "assertion_id": "tt99-scope",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "tt133-choice",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "source-and-context",
+          "passed": null,
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "eval_id": 8,
+      "response": "",
+      "assertions": [
+        {
+          "assertion_id": "prior-period",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "rate-boundaries",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "annualization",
+          "passed": null,
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "eval_id": 9,
+      "response": "",
+      "assertions": [
+        {
+          "assertion_id": "eight-billion-ineligible",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "cost-gate",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "industry-not-vat",
+          "passed": null,
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "eval_id": 10,
+      "response": "",
+      "assertions": [
+        {
+          "assertion_id": "exemption-review",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "nq43-uncertainty",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "no-omission",
+          "passed": null,
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "eval_id": 11,
+      "response": "",
+      "assertions": [
+        {
+          "assertion_id": "exact-arithmetic",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "direction",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "scope",
+          "passed": null,
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "eval_id": 12,
+      "response": "",
+      "assertions": [
+        {
+          "assertion_id": "independence",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "no-bundling",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "context",
+          "passed": null,
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "eval_id": 13,
+      "response": "",
+      "assertions": [
+        {
+          "assertion_id": "owner-salary",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "owner-distribution",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "separate-tax-bases",
+          "passed": null,
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "eval_id": 14,
+      "response": "",
+      "assertions": [
+        {
+          "assertion_id": "reject-nonfinite",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "decimal-only",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "domain-validation",
+          "passed": null,
+          "evidence": ""
+        }
+      ]
+    }
+  ]
+}

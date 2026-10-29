@@ -15,10 +15,12 @@ description: >-
 license: CC-BY-4.0
 metadata:
   author: Diginno
-  version: 1.0.2
+  version: 1.1.0
   category: business-ops/functions
   jurisdiction: VN
-  as_of: 2026-10-17
+  as_of: 2026-10-28
+  review_scope: tax-accounting-partial
+  draft_knowledge_as_of: 2026-10-17
   audience: chu-doanh-nghiep, ke-toan, consultant
 ---
 
@@ -38,7 +40,7 @@ Skill này **không phải luật sư**. Nó là lớp tra cứu có cấu trúc
 
 Mọi câu trả lời của skill này là **thông tin tham khảo**, không phải ý kiến pháp lý, không phải tư vấn thuế/kế toán, và **không tạo quan hệ luật sư – khách hàng**.
 
-- Văn bản pháp luật thay đổi liên tục. Mốc dữ liệu của skill: **17/10/2026**. Sau 6 tháng, phải kiểm tra lại nguồn.
+- **as_of 28/10/2026 chỉ là rà soát một phần thuế/kế toán**, không chứng nhận toàn bộ hiệu lực. Tri thức dự thảo/quản trị/chuyển đổi giữ mốc lịch sử **17/10/2026**, chưa cập nhật toàn diện. Trước mỗi tư vấn/kê khai, kiểm nguồn của kỳ liên quan và nêu giới hạn tại [08 — Nguồn](<references/08-sources.md>); không chờ đủ sáu tháng.
 - **Dự thảo luật không phải luật.** Không được trích dẫn dự thảo như quy định đang có hiệu lực.
 - Không bảo đảm tính đầy đủ, chính xác, phù hợp với trường hợp cụ thể.
 - Người dùng tự chịu trách nhiệm với quyết định của mình; tác giả và Diginno loại trừ trách nhiệm trong phạm vi pháp luật cho phép.
@@ -56,13 +58,13 @@ Cuối mỗi câu trả lời tư vấn, **luôn** chèn đúng dòng disclaimer
 | So sánh hộ kinh doanh, DNTN, TNHH MTV, TNHH 2TV, cổ phần | `references/01-entity-models.md` |
 | Dự thảo Luật Phát triển DNNVV 2026 và "doanh nghiệp một người" | `references/02-draft-sme-law-2026.md` |
 | Cơ cấu quản trị TNHH MTV, Chủ tịch công ty, người đại diện | `references/03-governance-tnhh-mtv.md` |
-| Kế toán trưởng, chế độ kế toán siêu nhỏ, Thông tư 58/2026 | `references/04-accounting.md` |
-| Thuế TNDN/GTGT, chọn phương pháp thuế, lịch kê khai | `references/05-tax.md` |
+| Kế toán trưởng; điều kiện chọn TT58/TT133/TT99 và năm tài chính áp dụng | [04 — Kế toán](<references/04-accounting.md>) |
+| Cổng TNDN, miễn/giảm, GTGT độc lập; hợp đồng CLI đánh giá/mô phỏng | [05 — Thuế](<references/05-tax.md>) |
 | Checklist chuyển đổi hộ kinh doanh lên công ty | `references/06-conversion-playbook.md` |
 | Cờ đỏ, rủi ro, khi nào phải dừng và chuyển luật sư | `references/07-risk-and-red-flags.md` |
 | Nguồn chính thức và cách kiểm chứng | `references/08-sources.md` |
 | Mẫu điều lệ, checklist, câu hỏi tư vấn | `assets/` |
-| Tính nhanh thuế % doanh thu vs kê khai | `scripts/so_sanh_thue.py` |
+| Đánh giá cổng có điều kiện / mô phỏng TNDN trước ưu đãi | [so_sanh_thue.py](<scripts/so_sanh_thue.py>) — đọc hợp đồng tại [05](<references/05-tax.md>) trước gọi |
 
 Với câu hỏi tra cứu đơn giản, chỉ cần đọc `00-legal-status.md` + file chuyên đề tương ứng. Với câu hỏi quyết định ("tôi nên làm gì"), đọc thêm `01`, `06`, `07`.
 
@@ -74,7 +76,7 @@ Với câu hỏi tra cứu đơn giản, chỉ cần đọc `00-legal-status.md`
 
 Trước khi trích dẫn bất kỳ điều luật nào, xác định nó thuộc nhóm nào:
 
-- **ĐANG CÓ HIỆU LỰC** — được trích dẫn bình thường, kèm số hiệu + điều khoản.
+- **ĐANG CÓ HIỆU LỰC** — chỉ kết luận sau kiểm nguồn và sửa đổi của kỳ, kèm số hiệu + điều/khoản/điểm + URL trực tiếp. `VERIFIED_SOURCE_TEXT` trong bảng chỉ chứng minh nội dung đã đọc, không thay kiểm toàn bộ hiệu lực; `VALIDITY_UNCONFIRMED` phải nêu rõ.
 - **DỰ THẢO** — phải nói rõ "dự thảo, chưa có hiệu lực", kèm ngày bản dự thảo và khả năng nội dung còn thay đổi.
 - **HẾT HIỆU LỰC / ĐÃ THAY THẾ** — không dùng, chỉ nêu để so sánh lịch sử.
 
@@ -98,7 +100,9 @@ Nếu người dùng không cung cấp, đưa câu trả lời theo **kịch b�
 
 ### 4. Tính toán phải minh bạch giả định
 
-Không đưa con số thuế "chắc chắn". Ghi rõ: doanh thu, chi phí, biên lợi nhuận, thuế suất, tỷ lệ % đang giả định; dùng `scripts/so_sanh_thue.py` cho bài toán so sánh; nêu rằng tỷ lệ thực tế phải tra văn bản thuế hiện hành.
+Đọc [05 — Thuế, hợp đồng CLI](<references/05-tax.md>) trước gọi [script](<scripts/so_sanh_thue.py>). Mặc định `--che-do danh-gia`: tách doanh thu hiện tại `--doanh-thu` và căn cứ kỳ trước xác định đúng/annualize `--doanh-thu-can-cu`; hỏi ngành, khả năng xác định chi phí/thu nhập và ngoại lệ liên kết/đặc thù. Thiếu hoặc chưa biết ngoại lệ: không so sánh. Căn cứ ≤1 tỷ: rà miễn; >3 tỷ: không đủ nhánh % doanh thu. Chỉ nhánh >1 đến ≤3 tỷ, không xác định được chi phí/thu nhập, không ngoại lệ và rõ ngành mới có so sánh **có điều kiện**, trước ưu đãi. Thu nhập nhập `--loi-nhuan` (alias `--thu-nhap-tinh-thue`) là **thu nhập tính thuế giả định trước ưu đãi**, không mặc nhiên lợi nhuận kế toán; thiếu thu nhập có thể trả cổng mà không tính.
+
+`--che-do mo-phong` yêu cầu cả `--ty-le 0.015 --thue-suat 0.17` dạng thập phân (0 < số < 1), không đánh giá điều kiện. Ví dụ 8 tỷ/1,2 tỷ chỉ mô phỏng **204 triệu và hòa vốn ≈8,82%**, không khuyến nghị chọn phương pháp thật. `tinh()` là số học, không quyết định quyền áp dụng. Mọi kết quả trước miễn/giảm, **không phải số thực nộp**; doanh thu hiện tại ≤10 tỷ cần kiểm NQ43 kỳ 2026–2027, nghị định hướng dẫn cuối cùng chưa xác minh. TNDN không tự quyết định quyền khấu trừ GTGT.
 
 ### 5. Từ chối tối ưu hóa bất hợp pháp
 
@@ -123,7 +127,7 @@ Khi rơi vào cờ đỏ ở `references/07-risk-and-red-flags.md` (tranh chấp
 1. Đọc `references/02-draft-sme-law-2026.md` + `00-legal-status.md`.
 2. Kiểm tra 3 điều kiện đồng thời của Điều 20 khoản 8: chuyển đổi từ hộ kinh doanh; TNHH MTV do một cá nhân làm chủ; quy mô siêu nhỏ.
 3. Phân biệt rõ: **không bắt buộc kế toán trưởng** đã có từ Nghị định 174/2016 và Thông tư 58/2026 (hiệu lực 1/7/2026); **không bắt buộc Chủ tịch công ty** mới là điểm mới và đang xung đột với Điều 85 Luật Doanh nghiệp 2020.
-4. Nêu timeline: trình Quốc hội 17/10/2026, dự kiến hiệu lực 1/7/2027 — **chưa áp dụng được**.
+4. Ghi đây là **tri thức lịch sử 17/10/2026**: mốc trình được ghi nhận 17/10, dự kiến hiệu lực 1/7/2027 — **không phải xác nhận tiến trình mới nhất tại 28/10, chưa dùng làm căn cứ áp dụng**. Kiểm lại trạng thái trước trả lời.
 5. Khuyến nghị: không trì hoãn việc chuyển đổi chỉ để chờ ưu đãi; nếu chuyển trước, vẫn phải có Chủ tịch công ty theo luật hiện hành.
 
 ## Quy trình C — Chuyển đổi hộ kinh doanh lên công ty
@@ -145,10 +149,10 @@ Khi rơi vào cờ đỏ ở `references/07-risk-and-red-flags.md` (tranh chấp
 ## Quy trình E — Kế toán và thuế
 
 1. Đọc `references/04-accounting.md` + `05-tax.md`.
-2. Xác định doanh nghiệp siêu nhỏ hay không (ngưỡng tại Nghị định 80/2021/NĐ-CP, Điều 5).
-3. Nêu rõ: không bắt buộc kế toán trưởng **không** đồng nghĩa không cần kế toán; vẫn phải mở sổ, xuất hóa đơn, kê khai, nộp báo cáo tài chính.
-4. So sánh phương pháp thuế bằng script, kèm giả định.
-5. Nhắc lịch kê khai và rủi ro chậm nộp.
+2. Xác định quy mô theo ngành/lao động/doanh thu/vốn (NĐ80 Điều 5), nhu cầu báo cáo và năm tài chính. Xét TT58/TT133/TT99 theo điều kiện: TT99 không chỉ dành DN lớn và không buộc mọi DNNVV bỏ TT133; vượt siêu nhỏ vẫn xét TT133. TT58 áp dụng năm tài chính bắt đầu từ/sau 01/07/2026, không tự đổi sổ giữa năm.
+3. Phân biệt người làm kế toán/phụ trách/kế toán trưởng với chế độ sổ và phương pháp thuế; vẫn tổ chức kế toán/hóa đơn/báo cáo theo nghĩa vụ cụ thể.
+4. Chạy cổng thuế tại mục 4 và [05](<references/05-tax.md>) trước phép tính; kiểm doanh thu kỳ trước, miễn ≤1 tỷ, tỷ lệ ngành, ưu đãi DN mới và NQ43 giảm **số thuế**. Chỉ nêu so sánh có điều kiện hoặc mô phỏng, không kết luận được tự chọn cách rẻ hơn. Kiểm GTGT độc lập.
+5. Nhắc môn bài đã chấm dứt từ 01/01/2026, rà tồn đọng trước đó; lương chủ TNHH MTV cá nhân không được trừ, khoản chủ nhận sau hoàn thành TNDN có miễn TNCN theo điều kiện. Chốt hạn kê khai hiện hành riêng, không dùng lịch cũ.
 
 ---
 
@@ -173,7 +177,7 @@ Dùng đúng cấu trúc này cho câu hỏi tư vấn (câu hỏi tra cứu ng�
 1. [...]
 
 ## Miễn trừ trách nhiệm
-Thông tin tham khảo, không phải tư vấn pháp lý/thuế/kế toán. Văn bản có thể đã thay đổi sau 17/10/2026. Hãy kiểm tra văn bản gốc và hỏi luật sư/kế toán hành nghề trước khi quyết định.
+Thông tin tham khảo, không phải tư vấn pháp lý/thuế/kế toán. Rà soát thuế/kế toán một phần ngày 28/10/2026; tri thức dự thảo giữ mốc 17/10/2026, không chứng nhận toàn bộ hiệu lực. Hãy kiểm tra văn bản gốc và hỏi luật sư/kế toán hành nghề trước khi quyết định.
 ```
 
 ---
