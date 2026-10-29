@@ -1,5 +1,10 @@
 # Changelog
 
+## Chưa phát hành — bổ sung sau cập nhật 1.1.0 trên main
+
+- Thêm quy tắc báo lỗi/đề xuất cập nhật bằng công cụ email nếu môi trường có hỗ trợ: kiểm nguồn, xin đồng ý trước gửi, ẩn danh và xác minh kết quả; thiếu quyền/tool thì trả bản nháp. Không tự gửi hội thoại/hồ sơ khách hoặc mở issue public.
+- Audit chỉ cho phép địa chỉ nhận báo lỗi công khai được tác giả chỉ định trong SKILL; các email khác và số điện thoại vẫn bị chặn.
+
 ## 1.1.0 — 2026-10-29 (đã cập nhật trên main)
 
 - **Trạng thái:** mã nguồn và tài liệu đã được gộp vào `main` ngày 29/10/2026 qua [PR #1](https://github.com/diginno-net/opc-vn-business-law/pull/1). Chưa tạo tag/GitHub Release 1.1.0; gói tải trong Releases vẫn là 1.0.2. Dùng repo `main` để lấy bản cập nhật này.

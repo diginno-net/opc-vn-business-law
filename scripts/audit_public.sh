@@ -29,10 +29,11 @@ else
   say "OK"
 fi
 
-# 3. Email / so dien thoai
+# 3. Email / so dien thoai — chi cho phep dia chi bao loi cong khai trong SKILL.md.
 say "== 3. Email / so dien thoai"
 if grep -rnoE "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}|(^|[^0-9])(0|\+84)(3|5|7|8|9)[0-9]{8}([^0-9]|$)" . \
-  --exclude-dir=.git --exclude-dir=dist --exclude-dir=launch --exclude="audit_public.sh"; then
+  --exclude-dir=.git --exclude-dir=dist --exclude-dir=launch --exclude="audit_public.sh" \
+  | grep -vE '^\./SKILL\.md:[0-9]+:work@diginno\.net$'; then
   fail "co email/so dien thoai"
 else
   say "OK"

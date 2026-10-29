@@ -303,6 +303,15 @@
           "evidence": ""
         }
       ]
+    },
+    {
+      "eval_id": 15,
+      "response": "",
+      "assertions": [
+        {"assertion_id": "verify-error", "passed": null, "evidence": ""},
+        {"assertion_id": "privacy-consent", "passed": null, "evidence": ""},
+        {"assertion_id": "honest-tool-fallback", "passed": null, "evidence": ""}
+      ]
     }
   ]
 }
