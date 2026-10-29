@@ -1,6 +1,9 @@
 # Changelog
 
-## 1.1.0 — 2026-10-28 (chưa phát hành)
+## 1.1.0 — 2026-10-29 (đã cập nhật trên main)
+
+- **Trạng thái:** mã nguồn và tài liệu đã được gộp vào `main` ngày 29/10/2026 qua [PR #1](https://github.com/diginno-net/opc-vn-business-law/pull/1). Chưa tạo tag/GitHub Release 1.1.0; gói tải trong Releases vẫn là 1.0.2. Dùng repo `main` để lấy bản cập nhật này.
+- **Mốc kiểm chứng pháp lý:** 28/10/2026, không phải ngày merge; chỉ rà soát trong phạm vi thuế/kế toán nêu dưới đây.
 
 - **Đính chính:** ví dụ 8 tỷ cũ dùng 20% mặc định; phép tính 17% là 204 triệu và biên hòa vốn 8,82% **trước miễn/giảm**, không xác nhận doanh nghiệp được dùng phương pháp % doanh thu. Sửa chiều kết luận hòa vốn trong tài liệu.
 - CLI mặc định `danh-gia`, tách doanh thu kỳ hiện tại với doanh thu căn cứ năm trước; không kết luận khi thiếu dữ kiện/ngoại lệ. Sàng lọc điều kiện % doanh thu <=3 tỷ, khả năng xác định chi phí/thu nhập và nhánh kiểm miễn <=1 tỷ.
