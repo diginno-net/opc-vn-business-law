@@ -308,9 +308,126 @@
       "eval_id": 15,
       "response": "",
       "assertions": [
-        {"assertion_id": "verify-error", "passed": null, "evidence": ""},
-        {"assertion_id": "privacy-consent", "passed": null, "evidence": ""},
-        {"assertion_id": "honest-tool-fallback", "passed": null, "evidence": ""}
+        {
+          "assertion_id": "verify-error",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "privacy-consent",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "honest-tool-fallback",
+          "passed": null,
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "eval_id": 16,
+      "response": "",
+      "assertions": [
+        {
+          "assertion_id": "hkd-not-tndn",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "gross-multichannel",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "separate-duties",
+          "passed": null,
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "eval_id": 17,
+      "response": "",
+      "assertions": [
+        {
+          "assertion_id": "boundary-current-source",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "not-no-obligations",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "crossing-threshold",
+          "passed": null,
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "eval_id": 18,
+      "response": "",
+      "assertions": [
+        {
+          "assertion_id": "buyer-refusal",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "timing-by-transaction",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "verify-exceptions",
+          "passed": null,
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "eval_id": 19,
+      "response": "",
+      "assertions": [
+        {
+          "assertion_id": "corrective-branch",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "no-production-action",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "no-false-certainty",
+          "passed": null,
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "eval_id": 20,
+      "response": "",
+      "assertions": [
+        {
+          "assertion_id": "method-before-minimum",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "vat-pit-bases",
+          "passed": null,
+          "evidence": ""
+        },
+        {
+          "assertion_id": "pit-not-vat-reduction",
+          "passed": null,
+          "evidence": ""
+        }
       ]
     }
   ]

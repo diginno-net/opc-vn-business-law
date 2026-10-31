@@ -64,5 +64,6 @@ Reports show calculator case counts separately from supplied semantic assertion/
 - <=1bn exemption is a review gate. NQ43 implementation uncertainty is explicit, not invented guidance or permission to skip filings.
 - Correct breakeven direction, taxable versus accounting income, before-incentive arithmetic, independent GTGT rules.
 - Individual-owned TNHH MTV owner remuneration/distribution distinctions; invalid inputs must not become plausible tax results.
+- HKD scenarios 16–20: gross versus platform payout, aggregate channels, independent withholding/filing/invoicing duties, exact 1bn versus >1bn, invoice timing and buyer refusal, ordinary versus cash-register correction rules, lawful PIT method/election and NQ43 PIT versus VAT distinctions. These are semantic rubrics, not HKD calculator tests.
 
 If source law changes, update rubrics/cases against verified primary text and review affected calculator behavior together; never lower expected values or delete failing assertions merely to obtain a green run.

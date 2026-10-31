@@ -34,6 +34,27 @@ Bằng chứng đầu vào là hai ghi chép nghiên cứu/review nội bộ có
 - Lượt kiểm bổ sung legal-docs-vn 28/10 đã xem trực quan các trang then chốt TT46, TT99, TT58, TT132 và đủ hai trang NQ43; TT46 không còn là phần hoàn toàn chưa đọc scan. Chưa kiểm trực quan toàn bộ trang/phụ lục/chữ ký; kiểm hình không phải xác thực chứng thư chữ ký số. Trước hồ sơ có trách nhiệm nghề nghiệp cần kiểm bản gốc và người hành nghề phù hợp.
 - Nhãn dùng trong [00](<00-legal-status.md>): `VERIFIED_SOURCE_TEXT` chỉ nội dung đã có bằng chứng; `VALIDITY_UNCONFIRMED` cho quan hệ hiệu lực còn thiếu; `DRAFT_ONLY` cho dự thảo. **as_of 28/10 không kéo tri thức dự thảo 17/10 thành mới nhất.**
 
+## Hồ sơ bổ sung HKD/hóa đơn — nguồn 29–30/10/2026
+
+Phạm vi [09](<09-hkd-tax-invoices.md>), không mở rộng CLI TNDN. PDF gốc được lưu local với manifest số phần, kích thước, SHA256 và text/OCR; bản thô không đưa vào gói public. Hoàn thiện tài liệu và kiểm thử ngày 31/10 không đồng nghĩa đã tìm lại toàn bộ luật đến 31/10.
+
+| Văn bản | Nguồn công khai tái kiểm được | Đối chiếu / giới hạn |
+|---|---|---|
+| NĐ68/2026 | [Công báo](https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-68-2026-nd-cp-469047.htm); [PDF 19 trang](https://congbaocdn.chinhphu.vn/180507251028987904/2026/3/18/469047-1773796836_v1_1773803477_signed.pdf) | Điều 3–6, 8; SHA256 `aa26c94d4591ba65552d08194a97da62b18ed1562892a8ec00b2b01fc5569ec9`. Phải đọc cùng sửa ngưỡng NĐ141, không dùng riêng bản gốc 500 triệu. |
+| NĐ141/2026 | [PDF 4 trang](https://congbaocdn.chinhphu.vn/180507251028987904/2026/5/14/469455-1778231931_v1_1778720623_signed.pdf) | Điều 1 khoản 1–2 và Điều 3; SHA256 `5336a6dcbffc1a6ddff8e2629033dd0b02867f2d6ec12f7e9d2b69c237fac50f`. HKD: ngưỡng, đăng ký HĐĐT; tách khỏi miễn TNDN DN tại Điều 2. |
+| Luật109/2025, Luật09/2026 | [Luật109 Công báo](https://congbao.chinhphu.vn/van-ban/luat-so-109-2025-qh15-468671.htm); [Luật09](https://congbao.chinhphu.vn/van-ban/luat-so-09-2026-qh16-469536.htm) | Luật109 Điều 7 khoản 1–4; Luật09 Điều 1 và Điều 5 khoản 2. Không dùng tỷ lệ giản lược của mọi hoạt động hoặc nhầm cơ sở TNCN thành GTGT. |
+| 25/VBHN-BTC | [PDF scan 21 trang](https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/8/25-vbhn-btc.signed.pdf) | Bìa ngày 13/08/2026 hợp nhất NĐ68 và NĐ141. Đã render/OCR để đọc; text trống không chứng minh thiếu điều khoản. **Không phải văn bản quy phạm độc lập, không thay việc kiểm NĐ252/TT89 và sửa đổi sau đó.** |
+| NĐ254/2026 | [Công báo](https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-254-2026-nd-cp-469957.htm); [PDF ký 55 trang](https://xdcs.cdnchinhphu.vn/446259493575335936/2026/7/13/254-ndcp-signed-hoa-don-dien-tu-1783935351029278986043.pdf) | Bản ký SHA256 `d8df03ef58aa26f2f3bf7014c830fe598c7939e2fc32643e436eca24f1fe85ae`; bản Công báo 55 trang SHA256 `9aa30852472c869f55f13e02aff177fcfd4b5bc4c8163f9103635e9c1caf4ba7`. Điều 4, 6–9, 43–44, Phụ lục mục 4/9; đã kiểm hình trang PDF 8 (trang in 70) cho ngưỡng và ngoại lệ đăng ký máy tính tiền. |
+| TT91/2026 | [Công báo kèm PDF 97 trang](https://congbao.chinhphu.vn/van-ban/thong-tu-so-91-2026-tt-btc-470171.htm) | SHA256 `9412ecb46612a0c222b4975c91c3160e062b7132c90291d7bf884f2810db3018`. Điều 10, 24–25; kiểm hình trang PDF 18 (trang in 43) khoản 1 điểm c: hóa đơn máy tính tiền lập sai phải thay thế trừ dẫn chiếu cụ thể; không áp nhánh đó cho mọi trả hàng. |
+| NQ43/2026 | PDF ký tại bảng 28/10 phía trên | Bổ sung Điều 1 khoản 1: TNCN cá nhân cư trú, doanh thu từng năm ≤10 tỷ, kỳ 2026–2027. Đã xem hình trang 1; hướng dẫn cuối cùng chưa xác minh. |
+| NĐ252/2026 | [Công báo/PDF](https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-252-2026-nd-cp-469958.htm) | Bản 133 trang, SHA256 `0ae4bf867af790bab3290df5c3b326a1070500c570a7a78f5cf152f1bf4da390`; kiểm hình trang PDF 22–23, 132 (trang in 23–24, 133): Điều 10 khoản 9 giữ dẫn thời hạn HKD theo NĐ68; Điều 11 khoản 1 ngoại lệ HKD dưới ngưỡng; Điều 74 khoản 1, khoản 3 điểm d thay NĐ117 từ 01/07/2026. Không đồng nghĩa đã kiểm toàn bộ cơ chế sàn. |
+| TT89/2026 | [PDF gốc](https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/7/89-btc.signed.pdf); [PDF đính chính kèm hồ sơ](https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/9/dinh-chinh-tt-89-2026-btc.signed.pdf) | Tải bản chính 839 trang và đính chính 2 trang; SHA256 tương ứng `952c45ffc0f10bfc176bd9ae6b3d204fd3a034294ee270278957b9c11e1471dc`, `4f0c2c4f44783ead748b49786aecc5392936a9e4469acfc3e813387a601029d5`. Đọc Điều 99–100, kiểm hình trang 197, 199: hiệu lực 01/07, bãi bỏ một phần Điều 4 TT18 và thay 6 mẫu. **Không tuyên bố đã đọc toàn bộ 839 trang/phụ lục.** |
+| QĐ2551/QĐ-BTC | [Công báo](https://congbao.chinhphu.vn/van-ban/quyet-dinh-so-2551-qd-btc-470485.htm) | Bản Công báo 2 trang, SHA256 `4e3c50144399bc92d5affc3c881ef51b9a0046f5a18d1fb38d6067fefecc2d0f`; xem hình đủ 2 trang: ký 15/09/2026, Điều 1 đính chính TT89 Điều 99 khoản 5 (tên hai mẫu mới), Điều 2–3 về tính gắn liền và hiệu lực. Khác hash bản đính chính kèm hồ sơ TT89, không gọi là cùng một tệp. |
+
+Nguồn lịch sử NĐ123/2020 được thu đủ **2 phần (93 + 53 trang)**, NĐ70/2025 78 trang và TT32/2025 để kiểm chuỗi thay thế, không dùng chúng làm căn cứ duy nhất sau 01/07/2026. Công báo tìm kiếm có kết quả thiếu/fuzzy và VBPL có shell/403: **không suy không có sửa đổi từ kết quả rỗng**. Nhãn `VERIFIED_SOURCE_TEXT / VALIDITY_UNCONFIRMED` phải đi cùng phần hướng dẫn; đọc được bản gốc không phải chứng nhận còn hiệu lực toàn bộ.
+
+**Chưa khóa:** toàn bộ cơ chế NĐ252/2026, TT89/2026/TT-BTC và sửa đổi tiếp theo để chốt mẫu/hạn/thủ tục cho từng hồ sơ sau 01/07; mới kiểm các điều khoản/chuyển tiếp/đính chính được chỉ ra phía trên. Nghị định hướng dẫn NQ43 cuối cùng, thuế GTGT chuyên ngành và chế tài vẫn chưa xác minh đủ. Chưa hoàn tất thì không gắn nhãn “đầy đủ luật hiện hành”.
+
 ## Nguồn nên tra
 
 | Mục đích | Địa chỉ | Ghi chú |
@@ -60,7 +81,7 @@ Bằng chứng đầu vào là hai ghi chép nghiên cứu/review nội bộ có
 Khi có văn bản mới:
 
 1. Cập nhật `references/00-legal-status.md` (bảng trạng thái là nguồn sự thật).
-2. Sửa file chuyên đề bị ảnh hưởng (`01`–`07`).
+2. Sửa file chuyên đề bị ảnh hưởng (`01`–`07`, `09`), ghi nguồn/phạm vi vào `08`.
 3. Cập nhật `CHANGELOG.md`, tăng `version` trong `SKILL.md` (semver).
 4. Chạy kiểm tra:
    ```bash

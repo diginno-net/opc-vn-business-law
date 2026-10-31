@@ -41,9 +41,10 @@ class PackageTests(unittest.TestCase):
                 names = archive.namelist()
                 self.assertIn('opc-vn-business-law/SKILL.md', names)
                 self.assertIn('opc-vn-business-law/scripts/so_sanh_thue.py', names)
+                self.assertIn('opc-vn-business-law/references/09-hkd-tax-invoices.md', names)
                 self.assertFalse(any('/evals/' in name or '/tests/' in name for name in names))
                 self.assertNotIn('opc-vn-business-law/scripts/run_evals.py', names)
-            with zipfile.ZipFile(Path(directory) / 'opc-vn-business-law-v1.1.0.zip') as archive:
+            with zipfile.ZipFile(Path(directory) / 'opc-vn-business-law-v1.2.0.zip') as archive:
                 names += archive.namelist()
                 self.assertIn('evals/calculator_cases.json', archive.namelist())
                 self.assertIn('tests/test_so_sanh_thue.py', archive.namelist())

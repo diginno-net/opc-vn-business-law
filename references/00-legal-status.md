@@ -1,6 +1,6 @@
 # 00 — Trạng thái pháp lý và phạm vi kiểm chứng
 
-> **as_of: 28/10/2026 — chỉ rà soát một phần thuế/kế toán.** Mốc này không chứng nhận toàn bộ skill còn hiệu lực. Nội dung quản trị, chuyển đổi và dự thảo giữ tri thức lịch sử **17/10/2026**, chưa kiểm lại toàn diện. Trước tư vấn/kê khai phải kiểm văn bản gốc và quan hệ sửa đổi của kỳ liên quan, không chờ đủ sáu tháng.
+> **as_of: 30/10/2026 — rà soát một phần:** thuế/kế toán DN mốc 28/10; HKD/hóa đơn đối chiếu 29–30/10, hoàn thiện tài liệu/kiểm thử 31/10. Mốc này không chứng nhận toàn bộ skill còn hiệu lực. Nội dung quản trị, chuyển đổi và dự thảo giữ tri thức lịch sử **17/10/2026**, chưa kiểm lại toàn diện. Trước tư vấn/kê khai phải kiểm văn bản gốc và quan hệ sửa đổi của kỳ liên quan, không chờ đủ sáu tháng.
 
 ## Thuế/kế toán: điều khoản đã đối chiếu trong bằng chứng ngày 28/10
 
@@ -17,6 +17,22 @@
 | [NQ43/2026/QH16](https://vanban.chinhphu.vn/?classid=1&docid=219330&orggroupid=1&pageid=27160) | Điều 1 khoản 2; Điều 2 | VERIFIED_SOURCE_TEXT qua toàn văn chữ Cổng Chính phủ và kiểm hình đủ 2 trang PDF ký ngày truy xuất 28/10; hiệu lực 24/08/2026, kỳ 2026–2027. Giảm **30% số TNDN phải nộp sau ưu đãi**, doanh thu từng năm 2026/2027 ≤10 tỷ, có ngoại lệ chia/tách. **Nghị định hướng dẫn cuối cùng chưa được xác minh**. Không đổi thuế suất luật định. |
 | [NQ198/2025/QH15](https://xaydungchinhsach.chinhphu.vn/nghi-quyet-198-2025-qh15-ve-mot-so-co-che-chinh-sach-dac-biet-phat-trien-kinh-te-tu-nhan-119250517191622422.htm) | Điều 10 khoản 4, khoản 6–7 | Miễn TNDN DNNVV đăng ký lần đầu cần kiểm điều kiện và NĐ20/2026; chấm dứt phương pháp khoán HKD/cá nhân và thu/nộp môn bài từ **01/01/2026**. Nghĩa vụ tồn đọng trước 2026 phải xử lý riêng. |
 | [NĐ253/2026/NĐ-CP](https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-253-2026-nd-cp-469959.htm) | Điều 39, Điều 69 | VERIFIED_SOURCE_TEXT trong bằng chứng bổ sung; hiệu lực 01/07/2026. Miễn TNCN cho khoản chủ DNTN/cá nhân chủ TNHH MTV VN nhận sau khi DN hoàn thành nghĩa vụ TNDN; không áp chung thuế đầu tư vốn 5%. |
+
+## HKD/hóa đơn: bổ sung nguồn 29–30/10/2026
+
+Chi tiết nhánh áp dụng tại [09 — HKD và hóa đơn](<09-hkd-tax-invoices.md>); **VERIFIED_SOURCE_TEXT / VALIDITY_UNCONFIRMED**, không chứng nhận toàn bộ quan hệ sửa đổi tới ngày sử dụng.
+
+| Văn bản | Điều khoản đối chiếu | Kết luận và giới hạn |
+|---|---|---|
+| [NĐ68/2026/NĐ-CP](https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-68-2026-nd-cp-469047.htm) + [NĐ141/2026/NĐ-CP](https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-141-2026-nd-cp-469455.htm) | NĐ68 Điều 3–6, Điều 8; NĐ141 Điều 1, Điều 3 | Ngưỡng 500 triệu tại các vị trí liệt kê được thay bằng 1 tỷ, áp dụng từ 01/01/2026; phân biệt TNCN theo doanh thu/thu nhập, ổn định phương pháp, chi phí và nghĩa vụ thông báo. Không dùng thủ tục đầu năm làm mặc định sau 01/07 khi chưa kiểm NĐ252/TT89. |
+| [Luật109/2025/QH15](https://congbao.chinhphu.vn/van-ban/luat-so-109-2025-qh15-468671.htm) + Luật09/2026/QH16 | Luật109 Điều 7; Luật09 Điều 1, Điều 5 khoản 2 | TNCN cá nhân cư trú kinh doanh, khác TNDN DN; kiểm ngưỡng Chính phủ quy định, ngành và nhánh cho thuê riêng. |
+| NQ43/2026/QH16 | Điều 1 khoản 1; Điều 2 | Giảm 30% số TNCN phải nộp 2026–2027 từ kinh doanh của cá nhân cư trú doanh thu từng năm ≤10 tỷ; không giảm GTGT/thuế suất. Chưa khóa nghị định hướng dẫn cuối cùng. |
+| [NĐ254/2026/NĐ-CP](https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-254-2026-nd-cp-469957.htm) | Điều 4, 6–9, 43–44; Phụ lục mục 4, 9 | Quy định hiệu lực 01/07/2026; Điều 43 khoản 2 chấm dứt NĐ123/2020, NĐ70/2025 và **Điều 1** NĐ41/2022. Ngưỡng **trên** 1 tỷ, loại/đăng ký hóa đơn, ngoại lệ và thời điểm là các câu hỏi riêng. |
+| [TT91/2026/TT-BTC](https://congbao.chinhphu.vn/van-ban/thong-tu-so-91-2026-tt-btc-470171.htm) | Điều 10, 24–25 | Quy định hiệu lực 01/07/2026. Sai ban đầu, sai máy tính tiền, trả hàng và khai bổ sung không cùng một nhánh; không kết luận hủy hàng loạt hoặc cùng một hạn xử lý cho mọi lỗi. |
+| NĐ252/2026/NĐ-CP | Điều 10 khoản 9; Điều 11 khoản 1; Điều 74 khoản 1, khoản 3 điểm d | Hiệu lực 01/07/2026, thay NĐ117/2025; thời hạn HKD tiếp tục dẫn NĐ68 và nhánh dưới ngưỡng không tự được miễn mọi hồ sơ. Chỉ đối chiếu các điều khoản chỉ ra, chưa kiểm toàn bộ cơ chế sàn/hoàn. |
+| TT89/2026/TT-BTC + QĐ2551/QĐ-BTC ngày 15/09/2026 | TT89 Điều 99 khoản 1, khoản 4 điểm đ, khoản 5; Điều 100; QĐ2551 Điều 1–3 | TT89 hiệu lực 01/07; bãi bỏ một phần Điều 4 TT18, thay 6 mẫu và có đính chính tên mẫu. Không suy TT18 bị bãi bỏ toàn bộ hoặc mọi mẫu cũ đều còn dùng. |
+
+**Khoảng trống:** mới đối chiếu một phần thủ tục/mẫu quản lý thuế sau 01/07/2026; toàn bộ thuế suất GTGT, cơ chế hoàn/đối trừ nộp thay, chế tài và chuỗi sửa đổi tiếp theo chưa khóa toàn diện. Tài liệu không cho phép tự phát hành/sửa hóa đơn thật.
 
 ## Danh mục lịch sử 17/10/2026 — chưa được rà soát toàn diện lại
 
