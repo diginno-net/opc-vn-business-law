@@ -1,6 +1,12 @@
 # Changelog
 
-## Chưa phát hành — bổ sung sau cập nhật 1.1.0 trên main
+## 1.2.0 — 2026-10-30 (cập nhật mã nguồn, chưa tạo GitHub Release)
+
+- Bổ sung chuyên đề HKD/cá nhân kinh doanh và hóa đơn: tách GTGT/TNCN, ngưỡng đúng 1 tỷ, doanh thu đa kênh trước phí, phương pháp/ổn định, hóa đơn máy tính tiền và ngoại lệ, thời điểm lập, điều chỉnh/thay thế/trả hàng.
+- Đối chiếu NĐ68 + NĐ141, Luật109 + Luật09, NĐ254 và TT91 từ PDF chính thức; bổ sung điều khoản thời hạn/thay thế của NĐ252, hiệu lực/bãi bỏ một phần/thay mẫu của TT89 và đính chính QĐ2551. Không coi nguồn gốc đã đọc là chứng nhận toàn bộ hiệu lực; toàn bộ thủ tục sau 01/07/2026 và hướng dẫn NQ43 vẫn chưa khóa.
+- Thêm Quy trình F, routing và 5 kịch bản đánh giá HKD–hóa đơn (tổng 20); không mở rộng CLI TNDN thành công cụ tính HKD, không thay engine/site vận hành hay sửa hóa đơn thật.
+
+## Bổ sung sau cập nhật 1.1.0 trên main — chưa tạo Release mới
 
 - Thêm quy tắc báo lỗi/đề xuất cập nhật bằng công cụ email nếu môi trường có hỗ trợ: kiểm nguồn, xin đồng ý trước gửi, ẩn danh và xác minh kết quả; thiếu quyền/tool thì trả bản nháp. Không tự gửi hội thoại/hồ sơ khách hoặc mở issue public.
 - Audit chỉ cho phép địa chỉ nhận báo lỗi công khai được tác giả chỉ định trong SKILL; các email khác và số điện thoại vẫn bị chặn.

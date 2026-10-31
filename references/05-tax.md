@@ -2,6 +2,8 @@
 
 > **as_of: 28/10/2026 — rà soát một phần thuế/kế toán**, không xác nhận toàn bộ hiệu lực hay số phải nộp. Dùng lại bằng chứng nguồn chính thức ghi trong [08 — Nguồn](<08-sources.md>); trước tư vấn/kê khai kiểm văn bản gốc, sửa đổi và hồ sơ cụ thể. Các phép so sánh dưới đây **luôn trước miễn/giảm/ưu đãi**.
 
+**Hộ kinh doanh/cá nhân kinh doanh, xuất hoặc sửa hóa đơn:** đọc [09 — HKD và hóa đơn](<09-hkd-tax-invoices.md>). Bảng và CLI TNDN ở đây không áp dụng để tính TNCN HKD.
+
 ## 1. Cổng TNDN: điều kiện trước phép tính
 
 Chốt chủ thể DN Việt Nam, kỳ tính thuế, hoạt động/ngành, doanh thu kỳ hiện tại, doanh thu làm căn cứ kỳ trước đã xác định đúng, khả năng xác định chi phí/thu nhập, quan hệ liên kết/công ty con và thu nhập đặc biệt. **HKD/cá nhân kinh doanh không dùng bảng TNDN DN này để tính TNCN kinh doanh.**

@@ -1,25 +1,24 @@
 ---
 name: opc-vn-business-law
 description: >-
-  Cẩm nang pháp lý – thuế – kế toán cho doanh nghiệp một người (one person company) tại Việt Nam:
-  chọn mô hình hộ kinh doanh / doanh nghiệp tư nhân / TNHH một thành viên, chuyển đổi hộ kinh doanh
-  lên công ty, bỏ hay giữ Chủ tịch công ty và kế toán trưởng, điều lệ, thuế TNDN/GTGT, kế toán
-  siêu nhỏ, và dự thảo Luật Phát triển doanh nghiệp nhỏ và vừa 2026 (Điều 20 khoản 8).
-  BẮT BUỘC dùng khi người dùng hỏi "doanh nghiệp một người", "công ty TNHH một thành viên",
-  "hộ kinh doanh lên công ty", "có cần kế toán trưởng không", "có bắt buộc chủ tịch công ty không",
-  "OPC", "one person company", "luật phát triển doanh nghiệp nhỏ và vừa", "Điều 20 khoản 8",
-  "nên thành lập công ty hay giữ hộ kinh doanh", "thuế hộ kinh doanh hay doanh nghiệp",
-  "điều lệ công ty", "chuyển đổi mô hình kinh doanh", hoặc cần soạn checklist/hồ sơ/tư vấn cho
-  chủ doanh nghiệp nhỏ — kể cả khi người dùng không nói chữ "skill".
-  Không dùng để tư vấn tranh chấp, tố tụng, M&A, đầu tư nước ngoài, phá sản — chuyển luật sư.
+  Cẩm nang pháp lý – thuế – kế toán cho doanh nghiệp một người tại Việt Nam:
+  chọn hộ kinh doanh/DNTN/TNHH một thành viên, chuyển hộ lên công ty, Chủ tịch công ty,
+  kế toán trưởng, điều lệ, TNDN/GTGT, kế toán siêu nhỏ, TNCN/GTGT hộ kinh doanh,
+  xuất/sửa hóa đơn điện tử và dự thảo Luật Phát triển DNNVV 2026 (Điều 20 khoản 8).
+  Dùng khi hỏi "doanh nghiệp một người", "OPC", "one person company", "TNHH một thành viên",
+  "hộ kinh doanh lên công ty", "có cần kế toán trưởng/Chủ tịch không", "điều lệ công ty",
+  "thuế hộ kinh doanh hay doanh nghiệp", "thuế hộ kinh doanh", "xuất hóa đơn",
+  "hóa đơn máy tính tiền", "hóa đơn sai", "Điều 20 khoản 8", "luật phát triển doanh nghiệp
+  nhỏ và vừa", hoặc cần checklist pháp lý/thuế cho chủ doanh nghiệp nhỏ.
+  Không tư vấn tranh chấp, tố tụng, M&A, đầu tư nước ngoài, phá sản — chuyển luật sư.
 license: CC-BY-4.0
 metadata:
   author: Diginno
-  version: 1.1.0
+  version: 1.2.0
   category: business-ops/functions
   jurisdiction: VN
-  as_of: 2026-10-28
-  review_scope: tax-accounting-partial
+  as_of: 2026-10-30
+  review_scope: tax-accounting-hkd-invoices-partial
   draft_knowledge_as_of: 2026-10-17
   audience: chu-doanh-nghiep, ke-toan, consultant
 ---
@@ -40,7 +39,7 @@ Skill này **không phải luật sư**. Nó là lớp tra cứu có cấu trúc
 
 Mọi câu trả lời của skill này là **thông tin tham khảo**, không phải ý kiến pháp lý, không phải tư vấn thuế/kế toán, và **không tạo quan hệ luật sư – khách hàng**.
 
-- **as_of 28/10/2026 chỉ là rà soát một phần thuế/kế toán**, không chứng nhận toàn bộ hiệu lực. Tri thức dự thảo/quản trị/chuyển đổi giữ mốc lịch sử **17/10/2026**, chưa cập nhật toàn diện. Trước mỗi tư vấn/kê khai, kiểm nguồn của kỳ liên quan và nêu giới hạn tại [08 — Nguồn](<references/08-sources.md>); không chờ đủ sáu tháng.
+- **as_of 30/10/2026 chỉ là rà soát một phần**: DN thuế/kế toán mốc 28/10, HKD/hóa đơn đối chiếu 29–30/10, không chứng nhận toàn bộ hiệu lực. Tri thức dự thảo/quản trị/chuyển đổi giữ mốc lịch sử **17/10/2026**, chưa cập nhật toàn diện. Trước mỗi tư vấn/kê khai, kiểm nguồn của kỳ liên quan và nêu giới hạn tại [08 — Nguồn](<references/08-sources.md>); không chờ đủ sáu tháng.
 - **Dự thảo luật không phải luật.** Không được trích dẫn dự thảo như quy định đang có hiệu lực.
 - Không bảo đảm tính đầy đủ, chính xác, phù hợp với trường hợp cụ thể.
 - Người dùng tự chịu trách nhiệm với quyết định của mình; tác giả và Diginno loại trừ trách nhiệm trong phạm vi pháp luật cho phép.
@@ -63,6 +62,7 @@ Cuối mỗi câu trả lời tư vấn, **luôn** chèn đúng dòng disclaimer
 | Checklist chuyển đổi hộ kinh doanh lên công ty | `references/06-conversion-playbook.md` |
 | Cờ đỏ, rủi ro, khi nào phải dừng và chuyển luật sư | `references/07-risk-and-red-flags.md` |
 | Nguồn chính thức và cách kiểm chứng | `references/08-sources.md` |
+| Thuế HKD/cá nhân kinh doanh, doanh thu đa kênh, hóa đơn điện tử và hóa đơn sai | [09 — HKD và hóa đơn](<references/09-hkd-tax-invoices.md>) |
 | Mẫu điều lệ, checklist, câu hỏi tư vấn | `assets/` |
 | Đánh giá cổng có điều kiện / mô phỏng TNDN trước ưu đãi | [so_sanh_thue.py](<scripts/so_sanh_thue.py>) — đọc hợp đồng tại [05](<references/05-tax.md>) trước gọi |
 
@@ -148,11 +148,23 @@ Khi rơi vào cờ đỏ ở `references/07-risk-and-red-flags.md` (tranh chấp
 
 ## Quy trình E — Kế toán và thuế
 
+**Rẽ nhánh trước:** chủ thể HKD/cá nhân kinh doanh hoặc câu hỏi xuất/sửa hóa đơn → Quy trình F; không dùng cổng TNDN doanh nghiệp để tính TNCN HKD.
+
 1. Đọc `references/04-accounting.md` + `05-tax.md`.
 2. Xác định quy mô theo ngành/lao động/doanh thu/vốn (NĐ80 Điều 5), nhu cầu báo cáo và năm tài chính. Xét TT58/TT133/TT99 theo điều kiện: TT99 không chỉ dành DN lớn và không buộc mọi DNNVV bỏ TT133; vượt siêu nhỏ vẫn xét TT133. TT58 áp dụng năm tài chính bắt đầu từ/sau 01/07/2026, không tự đổi sổ giữa năm.
 3. Phân biệt người làm kế toán/phụ trách/kế toán trưởng với chế độ sổ và phương pháp thuế; vẫn tổ chức kế toán/hóa đơn/báo cáo theo nghĩa vụ cụ thể.
 4. Chạy cổng thuế tại mục 4 và [05](<references/05-tax.md>) trước phép tính; kiểm doanh thu kỳ trước, miễn ≤1 tỷ, tỷ lệ ngành, ưu đãi DN mới và NQ43 giảm **số thuế**. Chỉ nêu so sánh có điều kiện hoặc mô phỏng, không kết luận được tự chọn cách rẻ hơn. Kiểm GTGT độc lập.
 5. Nhắc môn bài đã chấm dứt từ 01/01/2026, rà tồn đọng trước đó; lương chủ TNHH MTV cá nhân không được trừ, khoản chủ nhận sau hoàn thành TNDN có miễn TNCN theo điều kiện. Chốt hạn kê khai hiện hành riêng, không dùng lịch cũ.
+
+---
+
+## Quy trình F — Thuế hộ kinh doanh và xuất hóa đơn
+
+1. Đọc [09 — HKD và hóa đơn](<references/09-hkd-tax-invoices.md>) và [00 — Trạng thái](<references/00-legal-status.md>). Chốt năm/kỳ, tư cách cư trú/chủ thể, ngành, tất cả kênh/địa điểm và dữ liệu doanh thu trước phí, hoàn/hủy, thuế đã nộp thay.
+2. Xét riêng **GTGT, TNCN, thông báo/kê khai và hóa đơn**. Ghi rõ phương pháp đang áp dụng, điều kiện lựa chọn/ổn định, hồ sơ chi phí và phần nguồn chưa kiểm được; CLI TNDN của skill không tính thuế HKD.
+3. Với hóa đơn, xác định hoạt động có thuộc diện sử dụng hay ngoại lệ, loại hóa đơn/đăng ký hiện có và thời điểm giao hàng/hoàn thành dịch vụ/thu tiền. Kiểm điều khoản của đúng kỳ; khấu trừ trên sàn hoặc khách không lấy hóa đơn không tự giải quyết nghĩa vụ này.
+4. Với hóa đơn sai, phân loại lỗi và loại hóa đơn, trả hàng/chấm dứt giao dịch hay sai từ đầu, trạng thái gửi/khai và dữ liệu gốc; tra nhánh điều chỉnh/thay thế cùng hồ sơ cần giữ. Skill chỉ lập hướng xử lý, không đăng nhập hoặc sửa hóa đơn thật; thao tác thực tế cần người phụ trách duyệt và công cụ vận hành có quyền.
+5. Trả bảng **đã xác nhận / còn thiếu / việc tiếp theo** kèm số hiệu, điều khoản, URL và ngày kiểm. Chưa khóa chuỗi hiệu lực hoặc chưa đủ chứng từ thì nêu giới hạn, không kết luận số phải nộp, hạn xử lý hay mức phạt chắc chắn.
 
 ---
 

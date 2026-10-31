@@ -28,6 +28,7 @@ Dành cho chủ hộ kinh doanh, freelancer, người mới thành lập công t
 | `references/06-conversion-playbook.md` | 12 bước chuyển đổi hộ kinh doanh |
 | `references/07-risk-and-red-flags.md` | Rủi ro, cờ đỏ, khi nào chuyển luật sư |
 | `references/08-sources.md` | Nguồn chính thức, quy trình cập nhật |
+| [09 — HKD và hóa đơn](<references/09-hkd-tax-invoices.md>) | Tách TNCN/GTGT HKD, doanh thu đa kênh, ngưỡng, hóa đơn điện tử và xử lý sai sót |
 | `assets/` | Checklist, mẫu điều lệ, bộ câu hỏi tư vấn |
 | `scripts/so_sanh_thue.py` | Tính nhanh thuế % doanh thu vs kê khai |
 | `evals/evals.json` | Bộ kiểm thử gợi ý cho skill |
@@ -75,6 +76,8 @@ Nói với agent bằng ngôn ngữ tự nhiên:
 - "Dự thảo Luật Phát triển DNNVV 2026 có gì mới về doanh nghiệp một người?"
 - "So sánh giúp tôi thuế theo % doanh thu và kê khai, doanh thu 8 tỷ, lợi nhuận 1,2 tỷ."
 - "Soạn checklist chuyển đổi hộ kinh doanh lên công ty cho tôi."
+- "Hộ kinh doanh bán qua sàn và cửa hàng, sàn đã giữ thuế thì còn phải khai và xuất hóa đơn không?"
+- "Doanh thu đúng 1 tỷ có phải dùng hóa đơn máy tính tiền? Hóa đơn sai mã số thuế thì sửa thế nào?"
 
 Agent sẽ đọc `SKILL.md`, mở file chuyên đề tương ứng, và trả lời theo mẫu có disclaimer.
 
@@ -116,13 +119,13 @@ Nội dung pháp lý/kinh doanh đăng chủ yếu ở nhóm Tự động hóa; 
 
 ## Phạm vi
 
-**Có:** chọn mô hình, chuyển đổi, quản trị công ty một người, kế toán siêu nhỏ, thuế cơ bản, checklist hồ sơ, dự thảo luật 2026.
+**Có:** chọn mô hình, chuyển đổi, quản trị công ty một người, kế toán siêu nhỏ, thuế cơ bản, checklist hồ sơ, dự thảo luật 2026; tra cứu TNCN/GTGT HKD và xuất/sửa hóa đơn điện tử có dẫn nguồn. Không có công cụ tính thuế HKD tự động hoặc chức năng phát hành/sửa hóa đơn thật.
 
 **Không:** tranh chấp, tố tụng, M&A, đầu tư nước ngoài, phá sản, ngành nghề có điều kiện phức tạp, tối ưu thuế xuyên biên giới. Những việc này cần luật sư/kế toán hành nghề.
 
 ## Trạng thái dữ liệu
 
-- **Thuế/kế toán rà soát một phần ngày 28/10/2026**; không phải xác nhận hiệu lực toàn bộ tài liệu. Nội dung mô hình/quản trị/dự thảo khác giữ mốc 17/10/2026 và phải kiểm lại trước dùng.
+- **Thuế/kế toán DN rà soát một phần ngày 28/10/2026; HKD/hóa đơn đối chiếu nguồn 29–30/10**, hoàn thiện tài liệu/kiểm thử 31/10; không phải xác nhận hiệu lực toàn bộ tài liệu. Nội dung mô hình/quản trị/dự thảo khác giữ mốc 17/10/2026 và phải kiểm lại trước dùng.
 - Dự thảo Luật Phát triển DNNVV: **chưa phải luật theo hồ sơ 17/10**, dự kiến hiệu lực 01/7/2027; cần kiểm tiến trình mới trước trích dẫn.
 - TT58/2026: hiệu lực 01/7/2026, áp dụng năm tài chính bắt đầu từ/sau ngày đó. TT99/2025: hiệu lực 01/01/2026; DNNVV có quyền lựa chọn, không mặc nhiên thay TT133.
 - Đã kiểm trực quan TT46 Điều 3 sửa Điều 10 TT133 và TT99 Điều 2/31; chưa khóa toàn bộ chuỗi sửa đổi trên VBPL hoặc nghị định hướng dẫn NQ43 cuối cùng. Xem giới hạn tại `references/00-legal-status.md` và `references/08-sources.md`.
@@ -150,7 +153,8 @@ Ghi công đề xuất:
 
 ## Phiên bản
 
-- **1.1.0** — 28/10/2026 — bản sửa local: kiểm điều kiện thuế trước mô phỏng, bỏ mặc định tỷ lệ, bổ sung TT99 và nguồn miễn/giảm 2026, regression test và rubric. Chưa phát hành release.
+- **1.2.0** — 30/10/2026 — bổ sung HKD và hóa đơn điện tử, routing và 5 kịch bản đánh giá; hoàn thiện/kiểm thử local 31/10. Bản cập nhật mã nguồn, **chưa tạo tag/GitHub Release 1.2.0**; nguồn đã đọc không đồng nghĩa khóa toàn bộ hiệu lực.
+- **1.1.0** — 28–29/10/2026 — kiểm điều kiện thuế trước mô phỏng, bỏ mặc định tỷ lệ, bổ sung TT99 và nguồn miễn/giảm 2026, regression test và rubric; đã tích hợp main, không đồng nghĩa tạo GitHub Release.
 - **1.0.2** — 18/10/2026 — cập nhật link repo public, giữ nguyên nội dung pháp lý.
 - **1.0.1** — 17/10/2026 — bổ sung Điều 4, đủ 12 khoản Điều 20, Điều 33–35 sau đối chiếu OCR.
 - **1.0.0** — 17/10/2026 — bản đầu tiên.
